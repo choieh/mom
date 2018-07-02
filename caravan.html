@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CARAVAN - 압구정점</title>
+    <link rel="stylesheet" href="css/caravan.css" />
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/slider-pro.min.css" media="screen"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/caravan.js"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <script type="text/javascript" src="dist/js/jquery.sliderPro.min.js"></script>
+<!--    <script type="text/javascript" src="js/slider/slider.js"></script>-->
+    <script src="js/wow/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    
+    <script type="text/javascript">
+	$( document ).ready(function( $ ) {
+		$( '.slide_wrap' ).sliderPro({
+			width: 1200,
+			height: 450,
+			arrows: true,
+			buttons: false,
+			waitForLayers: true,
+			thumbnailPointer: true,
+			autoplay: true,
+			autoScaleLayers: false,
+			/*breakpoints: {
+				500: {
+					thumbnailWidth: 120,
+					thumbnailHeight: 50
+				}
+			}*/
+		});
+        
+	});
+</script>
+
+</head>
+
+<body>
+    <div id="wrap">
+       <header>
+        <h1><span>압구정로데오</span>카라반(CARAVAN)&nbsp;도산공원점</h1>
+       </header>
+       
+        <section>
+            <article class="restaurant">
+                <!--공통부분 -->
+                <div class="shop_info clearfix">
+                    <div class="info_01 clearfix">
+                        <ul class="clearfix">
+                            <li>
+                                <div class="logo">mom <br> labal</div>
+                            </li>
+                            <!--이름 변경 -->
+                            <li>
+                                <p><span>CARAVAN</span>카라반&nbsp;도산공원점</p>
+                            </li>
+                        </ul>
+
+                        <div class="instagram_img">instagram 이미지</div>
+                        <p class="instagram">
+                            <span>@caravanseoul</span> #압구정로데오#도산공원#브런치맛집 #에그베네딕트#아보카도토스트#맛스타그램
+                        </p>
+                    </div>
+
+                    <div class="info_2">
+                        <div class="line"></div>
+                        <h2>호화로운 여유가 필요할 때</h2>
+                        <div class="img">shop이미지</div>
+
+                    </div>
+                </div>
+                
+                
+<!--                본문-->
+                <div class="shop_detail">
+					
+					<div class="part_01">
+						
+						<p class="text wow fadeInUp"><span>#road1&nbsp;‘카라반(CARAVAN) 도산공원점’</span>
+							혹시 ‘소확행’이라는 단어를 아시나요? 소확행은 일상 속 나만의 작지만 확실한 행복을 뜻하는 단어입니다. 일상을 보내다 보면 지치고 힘든 순간들이 누구나 한번쯤은 있을 것이라고 생각합니다. 잠시 지친 일상에서 벗어나 소소하지만 확실한 행복을 가지는 방법으로 브런치 타임을 가져보는 건 어떤가요?
+							‘브런치(Brunch)’라는 단어는 아침식사(Blackfast)와 점심(Lunch)를 합친 단어입니다. 요즘 들어 흔히 쓰이는 ‘아점’과도 같은 말이죠.
+							미국식 브런치, 영국식 브런치 등 여러 나라의 브런치가 있지만 그 중 ‘호주식 브런치’는 조금은 생소하게 들릴 수 있을 것 같습니다.
+							오늘 소개할 맛집 ‘카라반’에서는 호주에서 건너온 유기농 밀가루를 사용해 만든 빵을 브런치 메뉴로 선보이고 있는데요.
+							호주의 청정 자연환경에서 자란 식재료를 이용해 다양한 음식을 선보이는 ‘호주식 브런치‘를 즐겨볼 수 있답니다.
+							일상 속 작은 행복, 맛있는 음식을 먹는 것만큼 작지만 확실한 행복이 있을까요🙂
+						</p>
+					</div>
+
+					<div class="part_02">
+
+						<div class="row clearfix">
+						  <ul>
+						     <li class="column"><img src="images/food1.JPG"  onclick="openModal();currentSlide(1)" class="cursor"></li>
+						     <li class="column"><img src="images/food2.JPG"  onclick="openModal();currentSlide(2)" class="cursor"></li>
+						     <li class="column"><img src="images/food3.JPG"  onclick="openModal();currentSlide(3)" class="cursor"></li>
+								 <li class="column"><img src="images/food4.JPG"  onclick="openModal();currentSlide(4)" class="cursor"></li>
+						  </ul>
+						</div>
+
+								<!--modal -->
+							 <div id="myModal" class="modal">
+							   <span class="close cursor" onclick="closeModal()">&times;</span>
+							   <div class="modal-content">
+
+							     <div class="mySlides">
+							       <img src="images/food1_detail.JPG" style="width:50%;">
+							     </div>
+
+							     <div class="mySlides">
+							       <img src="images/food2.JPG" style="width:100%">
+							     </div>
+
+							     <div class="mySlides">
+							       <img src="images/food3.JPG" style="width:100%">
+							     </div>
+
+									 <div class="mySlides">
+							       <img src="images/food4.JPG" style="width:100%">
+							     </div>
+
+
+							     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+							   </div>
+							 </div>
+
+					</div>
+
+					<p class="text wow fadeInUp">
+						평일 오전, 압구정 로데오의 거리를 걷다 보면 확 트인 외관을 지닌 곳이 눈에 들어온다. 안으로 발을 들여보면 어떤 느낌인지 더 공감할 것이다.  크게 난 창문으로 들어오는 햇살과 깔끔하고 섬세한 인테리어가 눈을 사로잡는 카라반 도산공원점은 한가로이 낮 시간을 보내기에 알맞은 장소다. 브런치를 즐기는 사람들의 목소리가 한 데 어우러져 한낮의 브런치 타임의 분위기를 UP시키고 있었다.
+					</p>
+					<p class="text wow fadeInUp">
+						<span>맛과 영양 모두 즐기는 브런치 타임</span>
+                        카라반에서는 다양한 브런치 메뉴를 볼 수 있는데, 그중 프랑스 구르메 수제 햄과 해오름 농장의 시금치, 유기농 달걀로 만든 수란, 프랑스 버터 레스큐르로 만든 홀랜다이즈 소스를 뿌린 에그 베네딕트는 시그니처 메뉴라고 할 수 있다. 아보카도 토스트는 슈퍼푸드로 인기 있는 다양한 종류의 퀴노아가 올라가 있어 식감과 풍미를 더해준다. 시즌마다 음료를 색다르게 선보이고 있는데 caravan refresher인 로즈 레몬에이드는 상큼한 맛과 향이 아주 좋다. 그 외에도 블루베리 팬케이크 등 브런치로 제격인 메뉴들이 다양하게 준비되어 있다.  특히, 이곳에서 사용되는 빵인 유기농 사워도우는 한남동에 있는 카라반 베이커리에서 천연 효모를 사용해 직접 만든 자연 발효빵으로 맛과 영양을 동시에 잡았다. 
+
+					</p>
+					<p class="text wow fadeInUp">
+						<span>호주식 브런치에 빠질 수 없는 커피 한잔☕️</span>
+                        야외에 마련된 테라스에서 커피와 함께 즐기는 브런치 타임을 즐겨보자. 호주에서는 브런치를 즐기며 커피를 한 잔이 아닌, 몇 잔 씩 먹을 정도로 많이 즐긴다고 한다.  카라반 커피의 원두는 ‘나무사이로’에서 로스팅한 것으로 주기적으로 원두의 종류를 바꿔 제공하고 있다. 
+                        브런치 메뉴로 인기를 끌고 있지만, 앞으로 다이닝 메뉴도 개편 예정이라고 하니 앞으로 더 다양한 메뉴를 즐길 수 있을 것이다. 호주에서는 브런치 후 케이크나 쿠키를 포장해 가는 사람이 많다고 한다. 이곳 카라반에도 타르트, 케이크, 에끌레어 등 다양한 디저트도 선보이고 있으니 디저트 메뉴를 즐겨보는 것도 좋다.
+					</p>
+
+<!--                슬라이드-->
+				<div class="slide_wrap slider-pro">
+ 	
+                    <div class="slide-container sp-slides">
+                            <div class="sp-slide">
+                                <img class="sp-image" src="src/css/images/blank.gif" data-src="images/slide_1.jpg" data-retina="images/slide_1.jpg" />
+
+                            </div>
+
+                            <div class="sp-slide">
+                                <img class="sp-image" src="src/css/images/blank.gif" data-src="images/slide_2.jpg" data-retina="images/slide_2.jpg" />
+                            </div>
+
+                            <div class="sp-slide">
+                                <img class="sp-image" src="src/css/images/blank.gif" data-src="images/slide_3.jpg" data-retina="images/slide_3.jpg" />
+                            </div>
+                            <div class="sp-slide">
+                                <img class="sp-image" src="src/css/images/blank.gif" data-src="images/slide_4.jpg" data-retina="images/slide_4.jpg" />
+                            </div>
+
+
+                    </div>
+				</div>
+					
+				<!--<div class="slide_btn left"><a href="#">&lsaquo;</a></div>
+						<div class="slide_btn right"><a href="#">&rsaquo;</a></div>
+
+						<div class="slide-container">
+								<ul class="slides clearfix">
+									<li>shop이미지</li>
+									<li>shop이미지</li>
+									<li>shop이미지</li>
+								</ul>
+						</div>-->
+               
+
+				<div class="address clearfix">
+					<div class="editorsay">
+						<ul>
+							<li><p><span>Editor.D&nbsp;<i class="far fa-comment"></i></span> &nbsp;햇빛을 받으며 야외 테라스에서 즐기는 커피 한 잔과 달달한 팬케이크 한 입으로 그날의 기분지수를 한껏 올리고 싶다면 이곳으로!</p></li>
+							<li><p><span>Editor.S&nbsp;<i class="far fa-comment"></i></span> &nbsp;미국식 브런치에 익숙한 나에게 호주식 브런치는 신선함 그 자체. 유기농 빵과 아보카도, 퀴노아까지 즐길 수 있는 곳. 건강에 관심이 많아진 내가 자주 찾을 이유로 충분하다.</p></li>
+						</ul>
+
+
+					</div>
+					<ul>
+						<li>서울 강남구 압구정로 46길 35</li>
+						<li>매일 09:00 - 22:30 식사 주문 마감 저녁 9시</li>
+						<li>02-548-2272 &nbsp;&#124;&nbsp; 발렛 파킹 가능</li>
+						<li>에그베네딕트 1만8000원</li>
+						<li>아보카도토스트 1만4000원</li>
+						<li>블루베리팬케이크 1만6000원</li>
+						<li>아메리카노 5000원</li>
+						<li>로즈 레몬에이드 6500원</li>
+						<li><span>Seasonal specials Brunch Bubbles</span>오후 3시까지 글라스 와인(피도라프 로세코) 주문 시 잔당 2000원 할인</li>
+						<li><span>Cheers to your bottle</span>와인 병으로 주문 시 바 메뉴 1개 무료 서비스</li>
+					</ul>
+				</div>
+
+				</div>
+
+				<div class="editor">
+						<p>&#124;&nbsp;&nbsp; <i>Editor.</i> &nbsp;D</p>
+				</div>
+
+            </article>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>

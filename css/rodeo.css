@@ -1,0 +1,332 @@
+@charset "utf-8";
+
+
+*{margin:0; padding:0;
+	/* box-sizing: border-box; */
+}
+ul,ol,li{list-style:none;}
+a:link,a:visited,a:hover,a:active{
+	color:#000;
+	text-decoration:none;
+}
+body{
+	color:#000;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 0.95em;
+}
+
+/*중복부분*/
+.clearfix{*zoom:1;}
+.clearfix:after{
+	display:block; clear:both; content:"";
+}
+.line{
+	width:90px;
+	height:5px;
+	text-indent:-9999px;
+	margin-bottom:3%;
+	background-color:rgba(0,0,0,1);
+}
+
+#wrap{
+	width:100%;
+}
+
+
+
+/*공통*/
+/*section*/
+section{
+    position:relative;
+	width:60%;
+	margin:0 auto;
+}
+
+section>article{
+	width:100%;
+	height:700px;
+/*    margin-top:10%;*/
+}
+
+
+section>article>.img{
+	width:100%;
+	height:350px;
+	text-indent:-9999px;
+}
+
+
+section>article .text{
+	line-height:30px;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+section>article .text>span{
+	display:block;
+	margin-bottom:3%;
+	text-align:center;
+	font-size:1.1em;
+	font-weight:600;
+}
+
+
+/*street*/
+
+    /*상단*/
+section>.street>.top{
+    width: 100%;
+    height: 250px;
+    padding-bottom: 5%;
+    text-indent: -9999px;
+    background-image: url(../images/redeo_top_img.jpg);
+    background-attachment: fixed;
+    background-position: center -420px;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+
+    /*타이틀*/
+section>.street>.title{
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+section>.street>.title>.line{
+    position: absolute;
+    top: 0;
+    right: 0;
+	height:5px;
+	margin-bottom:3%;
+}
+section>.street>.title>h2{
+    position: absolute;
+    top: 20px;
+    right: 0;
+	font-size:1em;
+	text-align:right;
+}
+
+    /*지도*/
+section>.street>.roadmap{
+/*	overflow: hidden;*/
+	width: 100%;
+	height: 100%;
+
+}
+
+section>.street>.roadmap>.map_img{
+        float: right;
+		width: 50%;
+		height: 500px;
+        text-indent: -9999px;
+		background-image: url(../images/map.png);
+		-webkit-background-size: cover;
+		background-size: 100%;
+		background-position: center center;
+		background-repeat: no-repeat;
+    
+        
+
+}
+
+section>.street>.roadmap>.text{
+    width: 50%;
+    height: 500px;
+    line-height: 50px;
+    
+   
+}
+
+
+
+
+/*매장 리스트*/
+section>.street>.list{
+	width: 100%;
+	height: 260px;
+    margin: 50px 0;
+}
+
+section>.street>.list>ul{
+    width: 450px;
+    height: 200px;
+    margin: 0 auto;
+}
+section>.street>.list>ul>li{
+	float: left;
+	width: 200px;
+	height: 100%;
+
+
+}
+
+
+section>.street>.list>ul>li:first-child{
+	margin-right: 50px;
+}
+section>.street>.list>ul>li:last-child{
+    margin-right: 0;
+}
+section>.street>.list>ul>li>a{
+	overflow: hidden;
+	display: block;
+	width: 200px;
+	height: 200px;
+}
+section>.street>.list>ul>li>a>img{
+	width: 200px;
+	height: 200px;
+
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+}
+
+section>.street>.list>ul>li:hover img{
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+
+section>.street>.list>ul>li>p{
+	width: 100%;
+	height: 50px;
+	margin-top: 10px;
+    line-height: 50px;
+	font-size: 0.9em;
+	font-weight: 600;
+}
+
+
+section>.street>.list>ul>li>p>span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1.3em;
+    background-color: #be0026;
+    border-radius: 50%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*미디어쿼리   1204px*/
+@media screen and (max-width: 1304px){
+
+section{
+		width: 80%;
+}
+section>.street>.top{
+    background-position: center -350px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    
+}
+
+
+
+/*미디어쿼리   796px*/
+@media screen and (max-width: 896px){
+
+section{
+		width: 90%;
+}
+    
+section>.street>.top{
+    background-position: -190px -350px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    
+}
+    
+    section>.street>.roadmap{
+	
+	height: 1200px;
+
+}
+    
+    section>.street>.roadmap>.map_img{
+        float: none;
+        width: 100%;
+        height: 500px;
+    }
+    section>.street>.roadmap>.text{
+       
+        width: 100%;
+        
+    }
+
+    section>.street>.list>ul{
+        
+    }
+
+section>.street>.list>ul>li{
+	float: none;
+	width: 100%;
+	height: 100%;
+     margin-bottom: 80px;
+
+
+}
+
+section>.street>.list>ul>li:first-child{
+	margin-right: 0;
+    margin-bottom: 80px;
+}
+
+    
+  /*  
+section>.street>.roadmap>.map_img{
+        float: right;
+		width: 50%;
+		height: 100%;
+        text-indent: -9999px;
+		background-image: url(../images/map.png);
+		-webkit-background-size: cover;
+		background-size: 80%;
+		background-position: center center;
+		background-repeat: no-repeat;
+        margin-left: 20px;
+
+}
+
+section>.street>.roadmap>.text{
+    width: 50%;
+    height: 100%;
+}*/    
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* / */

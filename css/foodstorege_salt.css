@@ -1,0 +1,315 @@
+@charset "utf-8";
+
+
+*{margin:0; padding:0;
+	/* box-sizing: border-box; */
+}
+ul,ol,li{list-style:none;}
+a:link,a:visited,a:hover,a:active{
+	color:#000;
+	text-decoration:none;
+}
+body{
+	color:#000;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 0.95em;
+}
+
+/*중복부분*/
+.clearfix{*zoom:1;}
+.clearfix:after{
+	display:block; clear:both; content:"";
+}
+.line{
+	width:90px;
+	height:5px;
+	text-indent:-9999px;
+	margin-bottom:3%;
+	background-color:rgba(0,0,0,1);
+}
+
+#wrap{
+	width:100%;
+}
+
+
+
+/*공통*/
+/*section*/
+section{
+    position: relative;
+	width:60%;
+    height: 100%;
+	margin:0 auto;
+/*	padding-top:100px;*/
+}
+
+section>article{
+	width:100%;
+	height:100%;
+}
+
+
+section>article .text{
+	line-height:30px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+section>article .text>span{
+	display:block;
+	margin-bottom:3%;
+	text-align:center;
+	font-size:1.1em;
+	font-weight:600;
+}
+
+
+/*editor*/
+section>article>.editor{
+    position: absolute;
+	width: 100%;
+	height: 50px;
+}
+
+section>article>.editor>p{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100px;
+	height: 50px;
+	text-align: right;
+	line-height: 80px;
+	font-weight: 600;
+	font-size: 0.8em;
+}
+
+
+
+/*foodstorege*/
+section>.foodstorege{
+	width: 100%;
+	height: 100%;
+}
+
+/*top_text*/
+section>.foodstorege>.top_text{
+    width: 100%;
+    height: 120px;
+}
+section>.foodstorege>.top_text>h2{
+	/* text-align: center; */
+	text-indent: -9999px;
+}
+section>.foodstorege>.top_text>p{
+    width: 100%;
+    height: 80px;
+	text-align: center;
+	font-size: 1em;
+}
+
+
+
+/*total*/
+section>.foodstorege>.total{
+    width: 100%;
+    height: 100%;
+}
+section>.foodstorege>.total>.img{
+	position: relative;
+	margin: 3% 0;
+    width: 100%;
+    height: 350px;
+	background-image: url(../images/foodstorege_1.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+
+
+section>.foodstorege>.total>.img>p{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    width: 50%;
+    padding: 5%;
+	color: #000;
+	line-height: 50px;
+	text-align: center;
+	text-indent: 0;
+	letter-spacing: 20px;
+	border-radius: 30px;
+	background-color: #fff;
+	transform: translate(-50%,-50%);
+
+}
+section>.foodstorege>.total>.img>p>span{
+	display: block;
+    width: 100%;
+	color: #58781d;
+	font-size: 2em;
+	font-family: 'Lobster', cursive;
+    
+   
+
+}
+
+
+
+    /*total - .text*/
+section>.foodstorege>.total>.text{
+    width: 100%;
+    height: 100%;
+}
+section>.foodstorege>.total>.text>p{
+    top: 150px;
+    width: 100%;
+    height: 10%;
+    
+    
+}
+
+
+section>.foodstorege>.total>.text>.title{
+	width: 90%;
+	height: 10%;
+    padding: 5%;
+    
+}
+
+section>.foodstorege>.total>.text>.title>p{
+	width: 100%;
+	height: 55px;
+    margin: 5% 0;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+
+
+section>.foodstorege>.total>.text>.title>p>span{
+	display: block;
+	font-size: 2em;
+	font-weight: 600;
+}
+
+
+/*storege_text*/
+section>.foodstorege>.total>.text>.storege_text{
+	width: 80%;
+	height: 80%;
+    padding: 10%;
+}
+section>.foodstorege>.total>.text>.storege_text>ul{
+	width: 100%;
+	height: 100%;
+}
+section>.foodstorege>.total>.text>.storege_text>ul>li{
+	float: left;
+	width: 45%;
+	height: 400px;
+
+}
+section>.foodstorege>.total>.text>.storege_text>ul>li:nth-child(odd){
+	margin-right: 10%;
+}
+section>.foodstorege>.total>.text>.storege_text>ul>li:last-child{
+    width: 100%;
+    height: 130px;
+    margin-right: 0;
+    margin-top: -150px;
+}
+section>.foodstorege>.total>.text>.storege_text>ul>li:nth-child(5){
+    
+}
+section>.foodstorege>.total>.text>.storege_text>ul>li>span{
+	display: block;
+	margin-top: 3%;
+	font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*미디어쿼리   796px*/
+@media screen and (max-width: 796px){
+
+section{
+    width: 90%;
+}
+    
+section>.foodstorege>.top_text{
+        height: 220px;
+}
+    
+    
+section>.foodstorege>.total>.text>.title>p{
+
+    height: 120px;
+
+}
+    
+    
+section>.foodstorege>.total>.img>p{
+	width:80%;
+
+}    
+
+    
+    
+/*storege_text*/
+
+section>.foodstorege>.total>.text>.storege_text>ul>li{
+	float: none;
+	width: 100%;
+	height: 100%;
+    margin-bottom: 20%;
+}
+    
+section>.foodstorege>.total>.text>.storege_text>ul>li:nth-child(odd){
+	margin-right: 0;
+}
+    
+
+section>.foodstorege>.total>.text>.storege_text>ul>li:last-child{
+    margin-right: 0;
+    margin-top: 0;
+}    
+    
+    
+ 
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* / */

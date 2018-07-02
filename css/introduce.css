@@ -1,0 +1,211 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+*{margin:0; padding:0;
+	/* box-sizing: border-box; */
+}
+ul,ol,li{list-style:none;}
+a:link,a:visited,a:hover,a:active{
+	color:#000;
+	text-decoration:none;
+}
+body{
+	color:#000;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 0.95em;
+}
+
+/*중복부분*/
+.clearfix{*zoom:1;}
+.clearfix:after{
+	display:block; clear:both; content:"";
+}
+.line{
+	width:90px;
+	height:5px;
+	text-indent:-9999px;
+	margin-bottom:3%;
+	background-color:rgba(0,0,0,1);
+}
+
+#wrap{
+	width:100%;
+}
+
+
+
+/*공통*/
+/*section*/
+section{
+	width:60%;
+	margin:0 auto;
+/*	padding-top:100px;*/
+
+
+}
+
+section>article{
+	width:100%;
+	height:700px;
+
+
+}
+section>.main{
+    position:relative;
+    background-color: #fff;
+}
+
+section>article>.top_img{
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+    background-image: url(../images/introduce.png);
+    background-attachment: fixed;
+    background-position: center 0;
+    -webkit-background-size: contain;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+
+section>article>.img{
+	width:100%;
+	height:350px;
+	text-indent:-9999px;
+}
+
+
+
+section>article .text{
+	line-height:30px;
+}
+
+section>article .text>span{
+	display:block;
+	margin-bottom:3%;
+	text-align:center;
+	font-size:1.1em;
+	font-weight:600;
+}
+
+
+/*메인*/
+/*
+section>.main>.introduce{
+	margin-bottom:3%;
+	background-image:url(../images/introduce.jpg);
+	-webkit-background-size: cover;
+    background-size: cover;
+	background-position:0 -50px;
+	background-repeat:no-repeat;
+}
+*/
+
+section>.main>.total{
+	width: 100%;
+	height: 350px;
+}
+
+section>.main>.total>.title{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+section>.main>.total>.title>.line{
+    position: absolute;
+    right: 0;
+}
+
+
+section>.main>.total>.title>h2{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: block;
+	font-size:2em;
+    transform: translate(0,-50%);
+
+}
+
+section>.main>.total>.text{
+    text-align: justify;
+    text-justify: inter-word;
+    background-color: #fff;
+}
+
+
+    /*스크롤 시 글보이기*/
+section>.main>.total>.text{
+    visibility: hidden;
+}
+
+section>.main>.total>.shown{
+    visibility: visible;
+}
+
+section>.main>.total>.writer{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 0.8em;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+
+
+
+
+
+
+
+/*미디어쿼리   1024px*/
+@media screen and (max-width: 1024px){
+
+section{
+    width: 80%;
+
+}
+
+section>article>.top_img{
+        margin-top: -100px;
+}
+
+section>article>.top_img{
+    -webkit-background-size: 80%;
+    background-size: 80%;
+}
+
+
+}
+
+
+/*미디어쿼리   796px*/
+@media screen and (max-width: 796px){
+
+section{
+    width: 80%;
+}
+    
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*    /*/
