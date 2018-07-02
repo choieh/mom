@@ -68,36 +68,47 @@ section>article .text>span{
 section>.labber{
 	width: 100%;
 	height: 100%;
+
+	background-color: #f0f;
 }
 
 section>.labber>.labber_img{
 	    width: 100%;
-        height: 900px;
+      height: 900px;
 	    text-indent: -9999px;
-	    background-image: url(../images/foodstorege_labber.jpg);
+	    background-image: url(../images/foodstorege_labber.png);
 	    background-position: center 0;
 	    -webkit-background-size: contain;
 	    background-size: contain;
 	    background-repeat: no-repeat;
+
+			outline: 1px solid green;
+
 	}
 section>.labber>.salt_img{
     width: 100%;
     height: 200px;
     text-indent: -9999px;
 
+		background-color: #ff0;
+
 }
 section>.labber>.salt_img>ul{
-    width: 70%;
+    width: 100%;
     height: 100%;
-    margin: -10% 0 0 30%;
+		background-color: #0ff;
 }
 section>.labber>.salt_img>ul>li{
     overflow: hidden;
     float: left;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+		margin-left: 7%;
     border-radius: 50%;
     box-sizing: border-box;
+
+		outline: 1px solid red;
+
 }
 
 section>.labber>.salt_img>ul>li:hover .img{
@@ -275,42 +286,73 @@ section>.labber>.modal>.modal-content{
 
 
 
-/*미디어쿼리   1024px*/
-@media screen and (max-width: 1024px){
+/*미디어쿼리   1204px*/
+@media all and (max-width: 1204px){
+	section{
+		width: 90%;
+	}
+
+
+
+}
+
+
+@media all and (min-width: 797px and max-width: 1203px){
+
+
+		section>.labber>.salt_img>ul>li{
+
+		    width: 50%;
+		    height: 50%;
+				margin-left: 0;
+
+
+				outline: 1px solid red;
+
+		}
+
+
+
+	}
+
+
 
 }
 
 
 /*미디어쿼리   796px*/
-@media screen and (max-width: 796px){
+@media all and (max-width: 796px){
 
 section{
-	width: 90%;
+	width: 100%;
 }
 
-
+section>.labber>.labber_img{
+	height: 500px;
+}
 
 section>.labber>.salt_img{
 /*		margin-top: -280px;*/
 /*        height: 100px;*/
 }
-    
+
 section>.labber>.salt_img>ul{
     width: 100%;
-     margin: -10% 0 0 16%;
 }
-    
+
 section>.labber>.salt_img>ul>li{
-    margin-right: 3%;
+		width: 25%;
+		height: 50%;
+    margin-left: 6%;
 }
 
 
 section>.labber>.modal>.modal-content>.mySlides{
 	overflow: auto;
 	height: 500px;
-	
+
 }
-    
+
 section>.labber>.modal>.modal-content>.mySlides>.img{
 	float: left;
 	width: 50%;
@@ -320,7 +362,7 @@ section>.labber>.modal>.modal-content>.mySlides>.img{
 	background-position: center center;
 	background-repeat: no-repeat;
 }
-    
+
 
 
 }
@@ -328,6 +370,7 @@ section>.labber>.modal>.modal-content>.mySlides>.img{
 
 
 
+}
 
 
 
