@@ -23,21 +23,27 @@
     
     <script type="text/javascript">
 	$( document ).ready(function( $ ) {
+        
+         $(window).on('resize', function () { location.reload(); });
+        
+        var win_width = $(window).width();
+        var slide_height = 450;
+        
+        if(win_width<=796){
+            slide_height = 1000;
+        }
+        
+       
 		$( '.slide_wrap' ).sliderPro({
 			width: 1200,
-			height: 450,
+			height: slide_height,
 			arrows: true,
 			buttons: false,
 			waitForLayers: true,
 			thumbnailPointer: true,
 			autoplay: true,
-			autoScaleLayers: false,
-			/*breakpoints: {
-				500: {
-					thumbnailWidth: 120,
-					thumbnailHeight: 50
-				}
-			}*/
+			autoScaleLayers: false
+            
 		});
         
 	});
@@ -48,7 +54,7 @@
 <body>
     <div id="wrap">
        <header>
-        <h1><span>압구정로데오</span>카라반(CARAVAN)&nbsp;도산공원점</h1>
+        <h1><span>압구정로데오</span>카라반(CARAVAN)&nbsp;압구정점</h1>
        </header>
        
         <section>
@@ -86,7 +92,7 @@
 					
 					<div class="part_01">
 						
-						<p class="text wow fadeInUp"><span>#road1&nbsp;‘카라반(CARAVAN) 도산공원점’</span>
+						<p class="text wow fadeInUp"><span>#road1 &nbsp;&lsquo; 카라반(CARAVAN) 압구정점 &rsquo;</span>
 							혹시 ‘소확행’이라는 단어를 아시나요? 소확행은 일상 속 나만의 작지만 확실한 행복을 뜻하는 단어입니다. 일상을 보내다 보면 지치고 힘든 순간들이 누구나 한번쯤은 있을 것이라고 생각합니다. 잠시 지친 일상에서 벗어나 소소하지만 확실한 행복을 가지는 방법으로 브런치 타임을 가져보는 건 어떤가요?
 							‘브런치(Brunch)’라는 단어는 아침식사(Blackfast)와 점심(Lunch)를 합친 단어입니다. 요즘 들어 흔히 쓰이는 ‘아점’과도 같은 말이죠.
 							미국식 브런치, 영국식 브런치 등 여러 나라의 브런치가 있지만 그 중 ‘호주식 브런치’는 조금은 생소하게 들릴 수 있을 것 같습니다.

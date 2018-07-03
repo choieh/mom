@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>도산공원</title>
+    <link rel="stylesheet" href="css/dosanpark.css" />
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/css/slider-pro.min.css" media="screen"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/dosanpark.js"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <script type="text/javascript" src="dist/js/jquery.sliderPro.min.js"></script>
+<!--    <script type="text/javascript" src="js/slider/slider.js"></script>-->
+    <script src="js/wow/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    
+    <script type="text/javascript">
+	$( document ).ready(function( $ ) {
+        
+        $(window).on('resize', function () { location.reload(); });
+        
+        var win_width = $(window).width();
+        var slide_height = 450;
+        
+        if(win_width<=796){
+            slide_height = 1000;
+        }
+        
+        
+		$( '.slide_wrap' ).sliderPro({
+			width: 1200,
+			height: slide_height,
+			arrows: true,
+			buttons: false,
+			waitForLayers: true,
+			thumbnailPointer: true,
+			autoplay: true,
+			autoScaleLayers: false
+            
+            
+		});
+        
+        
+	});
+</script>
+
+</head>
+
+<body>
+    <div id="wrap">
+       <header>
+        <h1><span>압구정로데오</span>도산공원</h1>
+       </header>
+       
+        <section>
+            <article class="restaurant">
+                <!--공통부분 -->
+                <div class="shop_info clearfix">
+                    <div class="info_01 clearfix">
+                        <ul class="clearfix">
+                            <li>
+                                <div class="logo">mom <br> labal</div>
+                            </li>
+                            <!--이름 변경 -->
+                            <li>
+                                <p><span>Dosan Park</span>도산공원</p>
+                            </li>
+                        </ul>
+
+                        <div class="instagram_img">instagram 이미지</div>
+                        <p class="instagram">
+                            #일상스타그램#압구정로데오#도산공원#도산기념관#점심시간#도산공원산책
+                        </p>
+                    </div>
+
+                    <div class="info_2">
+                        <div class="line"></div>
+                        <h2>한낮의 도심 속, 힐링 산책로</h2>
+                        <div class="img">shop이미지</div>
+
+                    </div>
+                </div>
+                
+                
+<!--                본문-->
+                <div class="shop_detail">
+					
+					<div class="part_01">
+						<p class="text wow fadeInUp"><span>#road3 &nbsp;&lsquo; 도산공원 &rsquo;</span>
+							나른한 오후, 가벼운 산책으로 그날의 기분을 올려보는 건 어떨까? 일상에서 시간을 정해 놓고 혹은 맘 잡고 운동하기란 쉽지 않다. 부담없이 가볍게 할 수 있는 운동부터 시작하길 추천한다. 식후에 하는 걷기는 생각보다 건강에도 좋다. 소화를 도와줄 뿐더러, 스탠포드 대학의 연구에 따르면 걷기는 창의성에 직접적인 향상을 가져오고, 뇌의 퇴화를 예방하며 뇌 기능을 향상시켜준다고 한다. 뿐만 아니라 햇빛을 받으면 세로토닌의 분비를 촉진시켜 행복감을 느끼게 한다. 오랜 시간의 산책이 아닌 15-20분 정도의 산책은 비타민D의 흡수를 돕기 때문에 부담없이 즐겨도 된다.
+						</p>
+					</div>
+
+
+<!--                슬라이드-->
+				<div class="slide_wrap slider-pro">
+ 	
+                    <div class="slide-container sp-slides">
+                            <div class="sp-slide">
+                                <img class="sp-image" src="src/css/images/blank.gif" data-src="images/week2_2/slide_1.jpg" data-retina="images/week2_2/slide_1.jpg" />
+
+                            </div>
+
+                            <div class="sp-slide">
+                                <img class="sp-image" src="src/css/images/blank.gif" data-src="images/week2_2/slide_2.jpg" data-retina="images/week2_2/slide_2.jpg" />
+                            </div>
+
+                            <div class="sp-slide">
+                                <img class="sp-image" src="src/css/images/blank.gif" data-src="images/week2_2/slide_3.jpg" data-retina="images/week2_2/slide_3.jpg" />
+                            </div>
+
+
+                    </div>
+				</div>
+				
+				<p class="text wow fadeInUp">
+							맛있는 점심 후, 삼삼오오 모여 산책로를 걷고 있는 모습을 어렵지 않게 볼 수 있다. 가벼운 걷기 운동으로 도산공원을 산책해보자. 도산공원은 도산 안창호 선생의 애국정신과 교육정신을 기리고자 조성한 공원이기도 하다. 산책길 옆으로 안창호와 부인 이혜련 여사의 묘소와 동상, 기념관 등이 있는 의미 있는 공간이다. 중간중간 앉아서 쉴 수 있는 벤치와 가벼운 운동을 즐길 수 있는 기구도 있으니, 몸의 리듬을 깨워주고 정신을 맑게 해줄 수 있는 코스 중 한 곳 이다. 
+				</p>
+		
+
+				</div>
+
+				<div class="editor">
+						<p>&#124;&nbsp;&nbsp; <i>Editor.</i> &nbsp;D</p>
+				</div>
+
+            </article>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
