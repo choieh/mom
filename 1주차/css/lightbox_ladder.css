@@ -27,7 +27,7 @@
   width: 60%;
 }
 
-section>.labber>.modal>.modal-content>.mySlides{
+section>.ladder>.modal>.modal-content>.mySlides{
 	overflow: hidden;
 	width: 100%;
 	height: 400px;
@@ -36,7 +36,7 @@ section>.labber>.modal>.modal-content>.mySlides{
 	box-sizing: border-box;
 }
 
-section>.labber>.modal>.modal-content>.mySlides>.img{
+section>.ladder>.modal>.modal-content>.mySlides>.img{
 	float: left;
 	width: 50%;
 	height: 400px;
@@ -46,18 +46,18 @@ section>.labber>.modal>.modal-content>.mySlides>.img{
 	background-repeat: no-repeat;
 }
 
-section>.labber>.modal>.modal-content>.himalaya>.img{
-	background-image: url(../images/foodstorege/himalaya.png);
+section>.ladder>.modal>.modal-content>.himalaya>.img{
+	background-image: url(../images/foodstorege/kind_1.png);
 }
-section>.labber>.modal>.modal-content>.maldon>.img{
-	background-image: url(../images/foodstorege/maldon.jpg);
+section>.ladder>.modal>.modal-content>.maldon>.img{
+	background-image: url(../images/foodstorege/kind_2.jpg);
 }
-section>.labber>.modal>.modal-content>.fleur>.img{
-	background-image: url(../images/foodstorege/fleur.jpg);
+section>.ladder>.modal>.modal-content>.fleur>.img{
+	background-image: url(../images/foodstorege/kind_3.jpg);
 }
 
 
-section>.labber>.modal>.modal-content>.mySlides>.text_all{
+section>.ladder>.modal>.modal-content>.mySlides>.text_all{
 	float: right;
 	width: 48%;
 	height: 100px;
@@ -65,22 +65,22 @@ section>.labber>.modal>.modal-content>.mySlides>.text_all{
 	padding: 1%;
 	text-align: center;
 }
-section>.labber>.modal>.modal-content>.mySlides>.text_all>h3{
+section>.ladder>.modal>.modal-content>.mySlides>.text_all>h3{
 	margin-bottom: 5%;
 }
-section>.labber>.modal>.modal-content>.mySlides>.text_all>h3>span{
+section>.ladder>.modal>.modal-content>.mySlides>.text_all>h3>span{
 	display: block;
 	font-size: 2em;
 }
 
-section>.labber>.modal>.modal-content>.mySlides>.text_all>ul{
+section>.ladder>.modal>.modal-content>.mySlides>.text_all>ul{
 		width: 80%;
 		margin: 0 auto;
 		line-height:30px;
 		text-align: justify;
 		text-justify: inter-word;
 }
-section>.labber>.modal>.modal-content>.mySlides>.text_all>ol>li{
+section>.ladder>.modal>.modal-content>.mySlides>.text_all>ol>li{
 	margin-bottom: 3%;
 }
 
@@ -133,7 +133,7 @@ section>.labber>.modal>.modal-content>.mySlides>.text_all>ol>li{
   width: 100%;
 }
 
-section>.labber>.modal>.modal-content>.mySlides{
+section>.ladder>.modal>.modal-content>.mySlides{
     
     height: 100%;
     
@@ -147,7 +147,7 @@ section>.labber>.modal>.modal-content>.mySlides{
     
 }
     
-section>.labber>.modal>.modal-content>.mySlides>.img{
+section>.ladder>.modal>.modal-content>.mySlides>.img{
 	float: none;
 	width: 100%;
 	height: 200px;
@@ -158,7 +158,7 @@ section>.labber>.modal>.modal-content>.mySlides>.img{
 } 
 
     
-section>.labber>.modal>.modal-content>.mySlides>.text_all{
+section>.ladder>.modal>.modal-content>.mySlides>.text_all{
 	float: none;
 	width: 100%;
 	height: 300px;
