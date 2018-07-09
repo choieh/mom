@@ -1,7 +1,8 @@
+
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
-
+/*@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');*/
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
 
 * {
     margin: 0;
@@ -25,7 +26,8 @@ a:active {
 
 body {
     color: #000;
-    font-family: 'Nanum Gothic', sans-serif;
+/*    font-family: 'Nanum Gothic', sans-serif;*/
+    font-family: 'NanumSquareRound',sans-serif;
     font-size: 0.95em;
 }
 
@@ -53,6 +55,12 @@ body {
     width: 100%;
 }
 
+
+
+/*공통*/
+
+/*header*/
+
 header {
     width: 60%;
     height: 200px;
@@ -60,8 +68,8 @@ header {
 }
 
 header > h1 {
-    margin-top: 50px;
     display: inline-block;
+    margin-top: 50px;
     font-size: 1.5em;
     line-height: 55px;
 }
@@ -71,16 +79,19 @@ header > h1 > span {
     font-size: 1.8em;
 }
 
-
-/*공통*/
+header>p{
+    width: 100%;
+    font-size: 1.8em;
+}
 
 /*section*/
 
 section {
+    /*	width:1152px;*/
     width: 60%;
     margin: 0 auto;
-}
 
+}
 
 section > article {
     position: relative;
@@ -106,30 +117,10 @@ section > article .text {
 
 section > article .text > span {
     display: block;
-    margin-bottom: 3%;
+    margin: 3% 0;
     text-align: center;
     font-size: 1.1em;
     font-weight: 600;
-}
-
-/*editor*/
-
-section > article > .editor {
-    position: relative;
-    width: 100%;
-    height: 100px;
-}
-
-section > article > .editor > p {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100px;
-    height: 50px;
-    text-align: right;
-    line-height: 80px;
-    font-weight: 600;
-    font-size: 0.8em;
 }
 
 
@@ -144,6 +135,13 @@ section > article > .shop_info > .info_01 {
     width: 30%;
     float: left;
 
+}
+
+section > article > .shop_info > .info_01>.instagram_line{
+    width: 60%;
+    height: 10px;
+    border-top: 2px solid #000;
+    
 }
 
 section > article > .shop_info > .info_01 > ul {
@@ -185,6 +183,16 @@ section > article > .shop_info > .info_01 > ul > li:last-child > p > span {
     font-weight: 600;
 }
 
+
+section > article > .shop_info > .info_01 > .like{
+    width: 60%;
+    height: 30px;
+    margin-top: 3%;
+    line-height: 30px;
+    font-size: 0.8em;
+    border-top: 2px solid #000;
+}
+
 section > article > .shop_info > .info_01 > .instagram_img {
     width: 200px;
     height: 200px;
@@ -206,7 +214,7 @@ section > article > .shop_info > .info_01 > .instagram > span {
 section > article > .shop_info > .info_01 > .instagram {
     width: 200px;
     height: 30px;
-    margin-top: 20px;
+/*    margin-top: 20px;*/
     font-size: 0.8em;
     line-height: 25px;
 }
@@ -219,6 +227,97 @@ section > article > .shop_info > .info_2 {
 
 }
 
+section > article > .shop_info > .info_2>h2{
+    width: 100%;
+    margin-bottom: 2%;
+
+}
+
+/*editor*/
+
+section > article > .editor {
+    width: 100%;
+    height: 100px;
+}
+
+section > article > .editor > ul {
+
+    width: 100%;
+    height: 45px;
+    padding-right: 1%;
+    text-align: right;
+    line-height: 20px;
+    font-weight: 600;
+    font-size: 0.8em;
+    border-right: 5px solid #000;
+}
+
+
+section > article > .shop_detail .address {
+    height: 350px;
+}
+
+/*editor say*/
+
+section > article > .shop_detail .address > .editorsay {
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+section > article > .shop_detail .address > .editorsay > ul {
+    width: 100%;
+    height: 100%;
+}
+
+section > article > .shop_detail .address > .editorsay > ul > li {
+    width: 100%;
+    height: 40%;
+    margin-bottom: 10%;
+    border-left: 5px solid #000;
+    box-sizing: border-box;
+}
+
+section > article > .shop_detail .address > .editorsay > ul > li:last-child {
+    margin-bottom: 0;
+}
+
+section > article > .shop_detail .address > .editorsay > ul > li > p {
+    width: 96%;
+    height: 100%;
+    margin-left: 2%;
+    line-height: 25px;
+    font-size: 1em;
+}
+
+section > article > .shop_detail .address > .editorsay > ul > li > p > span {
+    font-weight: 600;
+}
+
+/*매장 주소*/
+
+section > article > .shop_detail .address > ul {
+    float: right;
+    width: 60%;
+    height: 200px;
+    font-size: 0.8em;
+}
+
+section > article > .shop_detail .address > ul > li {
+    height: 25px;
+    line-height: 25px;
+    text-align: right;
+}
+
+section > article > .shop_detail .address > ul > li > span {
+    display: block;
+    font-weight: 800;
+    margin-top: 3%;
+}
+
+section > article > .shop_detail .address > ul > li:nth-child(5) > span {
+    margin-top: 0;
+}
 
 
 section > .store > .shop_info > .info_01 > .instagram_img {
@@ -475,9 +574,21 @@ section > .store > .shop_detail > .part_05 > p {
         letter-spacing: 10px;
     }
 
+    header>p{
+        text-align: center;
+        line-height: 40px;
+    }
+    header>p>span{
+        display: block;
+    }
+
+    
+    
+    
 
     section {
-        width: 100%;
+        width: 90%;
+        margin: 0 5%;
     }
 
 
@@ -494,7 +605,15 @@ section > .store > .shop_detail > .part_05 > p {
         height: 600px;
         margin-top: 0;
     }
+    
+    section > article > .shop_info > .info_01>.instagram_line{
+    width: 100%;
+    
+    }
 
+    section > article > .shop_info > .info_01 > .like{
+    width: 100%;
+    }
 
     section > article > .shop_info > .info_01 > ul {
         width: 100%;
@@ -522,10 +641,12 @@ section > .store > .shop_detail > .part_05 > p {
         font-size: 0.5em;
         text-align: center;
         font-family: 'Dancing Script', cursive;
+        
+        
     }
 
     section > article > .shop_info > .info_01 > ul > li:last-child {
-        width: 75%;
+        width: 65%;
         margin-top: 1.5%;
         font-size: 1.5em;
     }
@@ -567,6 +688,10 @@ section > .store > .shop_detail > .part_05 > p {
     section > article > .shop_info > .info_2 {
         float: none;
         width: 100%;
+    }
+    
+    section > article > .shop_info > .info_2>h2>span{
+        display: block;
     }
 
     section > .store > .shop_info > .info_2>.img{
@@ -645,12 +770,6 @@ section > .store > .shop_detail > .part_05 > p {
     }
 
 
-    section > .store > .shop_detail > .part_05 > p {
-        width: 98%;
-        height: 20px;
-        font-size: 0.6em;
-        text-align: right;
-    }
 
     section > .store > .editor {
         width: 98%;

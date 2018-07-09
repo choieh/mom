@@ -66,14 +66,19 @@ header {
 }
 
 header > h1 {
-    margin-top: 50px;
     display: inline-block;
+    margin-top: 50px;
     font-size: 1.5em;
     line-height: 55px;
 }
 
 header > h1 > span {
     display: block;
+    font-size: 1.8em;
+}
+
+header>p{
+    width: 100%;
     font-size: 1.8em;
 }
 
@@ -128,6 +133,22 @@ section > article > .shop_info > .info_01 {
     width: 30%;
     float: left;
 
+}
+
+section > article > .shop_info > .info_01>.instagram_line{
+    width: 60%;
+    height: 10px;
+    border-top: 2px solid #000;
+    
+}
+
+section > article > .shop_info > .info_01 > .like{
+    width: 60%;
+    height: 30px;
+    margin-top: 3%;
+    line-height: 30px;
+    font-size: 0.8em;
+    border-top: 2px solid #000;
 }
 
 section > article > .shop_info > .info_01 > ul {
@@ -190,7 +211,6 @@ section > article > .shop_info > .info_01 > .instagram > span {
 section > article > .shop_info > .info_01 > .instagram {
     width: 200px;
     height: 30px;
-    margin-top: 20px;
     font-size: 0.8em;
     line-height: 25px;
 }
@@ -275,14 +295,16 @@ section > article > .editor {
     height: 100px;
 }
 
-section > article > .editor > p {
+section > article > .editor > ul {
 
     width: 100%;
-    height: 100%;
+    height: 45px;
+    padding-right: 1%;
     text-align: right;
-    line-height: 80px;
+    line-height: 20px;
     font-weight: 600;
     font-size: 0.8em;
+    border-right: 5px solid #000;
 }
 
 
@@ -577,6 +599,14 @@ section>.restaurant>.shop_detail>.check>.tip{
         letter-spacing: 10px;
     }
 
+    header>p{
+        text-align: center;
+        line-height: 40px;
+    }
+    header>p>span{
+        display: block;
+    }
+
 
 
 
@@ -594,6 +624,14 @@ section>.restaurant>.shop_detail>.check>.tip{
         margin-top: 0;
     }
 
+    section > article > .shop_info > .info_01>.instagram_line{
+    width: 100%;
+    
+    }
+
+    section > article > .shop_info > .info_01 > .like{
+    width: 100%;
+    }
 
     section > article > .shop_info > .info_01 > ul {
         width: 100%;
@@ -787,12 +825,14 @@ section > .restaurant > .shop_detail>.recommend>.dish_2>ul>.intext>.text>span{
 
     
     
-    
-     /*editor*/
+/*editor*/
     section > article > .editor {
         margin-top: 400px;
 
     }
+    
+    
+
 
 }
 

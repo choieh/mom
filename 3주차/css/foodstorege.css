@@ -65,22 +65,21 @@ section>article .text>span{
 
 
 /*editor*/
-section>article>.editor{
-    position: absolute;
-	width: 100%;
-	height: 50px;
+section > article > .editor {
+    width: 100%;
+    height: 100px;
 }
 
-section>article>.editor>p{
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 100px;
-	height: 50px;
-	text-align: right;
-	line-height: 80px;
-	font-weight: 600;
-	font-size: 0.8em;
+section > article > .editor > ul {
+
+    width: 100%;
+    height: 45px;
+    padding-right: 1%;
+    text-align: right;
+    line-height: 20px;
+    font-weight: 600;
+    font-size: 0.8em;
+    border-right: 5px solid #000;
 }
 
 
@@ -250,7 +249,7 @@ section>.foodstorege>.total>.text>.storege_text ul{
 }
 
 section>.foodstorege>.total>.text>.storege_text ul>li{
-    height: 430px;
+    height: 100%;
 }
 
 
@@ -285,10 +284,13 @@ section>.foodstorege>.total>.text>.storege_text>.effect{
     width: 100%;
 }
 
+section>.foodstorege>.total>.text>.storege_text>.effect>.line{
+    margin-top: 10%;
+}
 
 
 section>.foodstorege>.total>.text>.storege_text>.effect>ul>li{
-	height: 400px;
+	height: 100%;
 }
 
 
@@ -300,6 +302,11 @@ section>.foodstorege>.total>.text>.storege_text>.recipe{
     width: 100%;
     height: 100%;
 }
+
+section>.foodstorege>.total>.text>.storege_text>.recipe>.line{
+    margin-top: 10%;
+}
+
 section>.foodstorege>.total>.text>.storege_text>.recipe>ol{
     width: 100%;
     height: 200px;
@@ -339,7 +346,13 @@ section>.foodstorege>.total>.text>.storege_text>.recipe>ol>li>p>span{
 
 
 
-
+/*미디어쿼리   1024px*/
+@media screen and (max-width: 1024px){
+        
+    section{
+        width: 80%;
+    }
+}
 
 
 

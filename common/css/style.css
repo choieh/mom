@@ -1,6 +1,7 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+/*@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');*/
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
 
 * {
     margin: 0;
@@ -24,7 +25,8 @@ a:active {
 
 body {
     color: #000;
-    font-family: 'Nanum Gothic', sans-serif;
+/*    font-family: 'Nanum Gothic', sans-serif;*/
+    font-family: 'NanumSquareRound',sans-serif;
     font-size: 0.95em;
 }
 
@@ -44,7 +46,7 @@ body {
     width: 90px;
     height: 5px;
     text-indent: -9999px;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
     background-color: rgba(0, 0, 0, 1);
 }
 
@@ -65,14 +67,19 @@ header {
 }
 
 header > h1 {
-    margin-top: 50px;
     display: inline-block;
+    margin-top: 50px;
     font-size: 1.5em;
     line-height: 55px;
 }
 
 header > h1 > span {
     display: block;
+    font-size: 1.8em;
+}
+
+header>p{
+    width: 100%;
     font-size: 1.8em;
 }
 
@@ -129,6 +136,13 @@ section > article > .shop_info > .info_01 {
 
 }
 
+section > article > .shop_info > .info_01>.instagram_line{
+    width: 60%;
+    height: 10px;
+    border-top: 2px solid #000;
+    
+}
+
 section > article > .shop_info > .info_01 > ul {
     width: 500px;
     height: 50px;
@@ -168,6 +182,16 @@ section > article > .shop_info > .info_01 > ul > li:last-child > p > span {
     font-weight: 600;
 }
 
+
+section > article > .shop_info > .info_01 > .like{
+    width: 60%;
+    height: 30px;
+    margin-top: 3%;
+    line-height: 30px;
+    font-size: 0.8em;
+    border-top: 2px solid #000;
+}
+
 section > article > .shop_info > .info_01 > .instagram_img {
     width: 200px;
     height: 200px;
@@ -189,7 +213,7 @@ section > article > .shop_info > .info_01 > .instagram > span {
 section > article > .shop_info > .info_01 > .instagram {
     width: 200px;
     height: 30px;
-    margin-top: 20px;
+/*    margin-top: 20px;*/
     font-size: 0.8em;
     line-height: 25px;
 }
@@ -202,11 +226,11 @@ section > article > .shop_info > .info_2 {
 
 }
 
-
 section > article > .shop_info > .info_2>h2{
-    margin-bottom: 1%;
-}
+    width: 100%;
+    margin-bottom: 2%;
 
+}
 
 /*editor*/
 
@@ -215,24 +239,59 @@ section > article > .editor {
     height: 100px;
 }
 
-section > article > .editor > p {
+section > article > .editor > ul {
 
     width: 100%;
-    height: 100%;
+    height: 45px;
+    padding-right: 1%;
     text-align: right;
-    line-height: 80px;
+    line-height: 20px;
     font-weight: 600;
     font-size: 0.8em;
+    border-right: 5px solid #000;
 }
-
-
 
 
 section > article > .shop_detail .address {
     height: 350px;
 }
 
+/*editor say*/
 
+section > article > .shop_detail .address > .editorsay {
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+section > article > .shop_detail .address > .editorsay > ul {
+    width: 100%;
+    height: 100%;
+}
+
+section > article > .shop_detail .address > .editorsay > ul > li {
+    width: 100%;
+    height: 40%;
+    margin-bottom: 10%;
+    border-left: 5px solid #000;
+    box-sizing: border-box;
+}
+
+section > article > .shop_detail .address > .editorsay > ul > li:last-child {
+    margin-bottom: 0;
+}
+
+section > article > .shop_detail .address > .editorsay > ul > li > p {
+    width: 96%;
+    height: 100%;
+    margin-left: 2%;
+    line-height: 25px;
+    font-size: 1em;
+}
+
+section > article > .shop_detail .address > .editorsay > ul > li > p > span {
+    font-weight: 600;
+}
 
 /*매장 주소*/
 
@@ -261,90 +320,22 @@ section > article > .shop_detail .address > ul > li:nth-child(5) > span {
 
 
 
-/*restaurant*/
-
-section > .restaurant {
-    width: 100%;
-    height: 100%;
-}
-
-section > .restaurant > .shop_info > .info_01 > .instagram_img {
-    background-image: url(../images/week2_3/instagram.jpg);
-}
-
-
-
-section > .restaurant > .shop_info > .info_2 > .img {
-    width: 100%;
-    height: 350px;
-    text-indent: -9999px;
-    background-image: url(../images/week2_3/main.jpg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-}
 
 
 
 
 
-/*shop_detail*/
-
-
-section > .restaurant > .shop_detail > .part_02 {
-    width: 100%;
-    height: 300px;
-    margin: 5% 5% ;
-/*
-    margin-top: 5%;
-    margin-bottom: -80px;
-*/
-    /*text-indent: 5px;*/
-}
-
-/*food lightbox*/
-
-section > .restaurant > .shop_detail > .part_02 > p {
-    width: 100%;
-    margin: 2% 0;
-    font-size: 0.8em;
-    text-align: right;
-}
-
-/*slide*/
-
-section > .restaurant > .shop_detail > .slide_wrap {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 5% 0 7% 0;
-}
-
-section > .restaurant > .shop_detail > .slide_wrap > .slide-container {
-    position: absolute;
-    overflow: hidden;
-    width: 100%;
-    
-
-}
-
-
-section>.restaurant>.shop_detail>p{
-    margin-bottom: 5%;
-}
 
 
 
-/*미디어쿼리   1700px*/
-
-@media screen and (max-width: 1700px) {
-
-    section > article > .shop_detail .address {
-/*        margin-top: -50px;*/
-    }
 
 
-}
+
+
+
+
+
+
 
 
 
@@ -354,13 +345,6 @@ section>.restaurant>.shop_detail>p{
 
     section {
         width: 90%;
-    }
-
-    section > .street > .top {
-        background-position: -190px -350px;
-        -webkit-background-size: cover;
-        background-size: cover;
-
     }
 
 
@@ -384,6 +368,14 @@ section>.restaurant>.shop_detail>p{
         letter-spacing: 10px;
     }
 
+    header>p{
+        text-align: center;
+        line-height: 40px;
+    }
+    header>p>span{
+        display: block;
+    }
+
 
 
 
@@ -399,6 +391,16 @@ section>.restaurant>.shop_detail>p{
         width: 100%;
         height: 600px;
         margin-top: 0;
+    }
+
+    
+    section > article > .shop_info > .info_01>.instagram_line{
+    width: 100%;
+    
+    }
+    
+    section > article > .shop_info > .info_01 > .like{
+    width: 100%;
     }
 
 
@@ -473,21 +475,36 @@ section>.restaurant>.shop_detail>p{
         float: none;
         width: 100%;
     }
+    
+    section > article > .shop_info > .info_2>h2>span{
+        display: block;
+
+}
 
 
-    section > .restaurant > .shop_detail > .part_02 {
-        height: 150px;
-
-    }
-
-    section > .restaurant > .shop_detail>.part_01>.text>span{
-        padding-top: 7%;
-/*        padding-bottom:3%;*/
-    }
+  
 
 
+    /*editorsay*/
     section > article > .shop_detail .address {
-        margin-top: 20%;
+/*        margin-top: -100px;*/
+    }
+
+
+    section > article > .shop_detail .address > .editorsay {
+        float: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    section > article > .shop_detail .address > .editorsay > ul {
+        width: 100%;
+        height: 100%;
+    }
+
+    section > article > .shop_detail .address > .editorsay > ul > li {
+        width: 100%;
+        height: 120px;
     }
 
     section > article > .shop_detail .address > ul {
@@ -502,11 +519,16 @@ section>.restaurant>.shop_detail>p{
     }
 
 
+    /*editor*/
+    section > article > .editor {
+/*        margin-top: 400px;*/
+
+    }
+
+
 
 
 
 }
 
 /*end 796px*/
-
-/* / */

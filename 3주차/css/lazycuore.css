@@ -65,14 +65,19 @@ header {
 }
 
 header > h1 {
-    margin-top: 50px;
     display: inline-block;
+    margin-top: 50px;
     font-size: 1.5em;
     line-height: 55px;
 }
 
 header > h1 > span {
     display: block;
+    font-size: 1.8em;
+}
+
+header>p{
+    width: 100%;
     font-size: 1.8em;
 }
 
@@ -121,6 +126,23 @@ section > article .text > span {
 section > article > .shop_info {
     height: 410px;
 
+}
+
+
+section > article > .shop_info > .info_01>.instagram_line{
+    width: 60%;
+    height: 10px;
+    border-top: 2px solid #000;
+    
+}
+
+section > article > .shop_info > .info_01 > .like{
+    width: 60%;
+    height: 30px;
+    margin-top: 3%;
+    line-height: 30px;
+    font-size: 0.8em;
+    border-top: 2px solid #000;
 }
 
 section > article > .shop_info > .info_01 {
@@ -417,6 +439,14 @@ section>.restaurant>.shop_detail>p{
         letter-spacing: 10px;
     }
 
+    header>p{
+        text-align: center;
+        line-height: 40px;
+    }
+    header>p>span{
+        display: block;
+    }
+
 
 
 
@@ -432,6 +462,15 @@ section>.restaurant>.shop_detail>p{
         width: 100%;
         height: 600px;
         margin-top: 0;
+    }
+    
+    section > article > .shop_info > .info_01>.instagram_line{
+    width: 100%;
+    
+    }
+
+    section > article > .shop_info > .info_01 > .like{
+    width: 100%;
     }
 
 
@@ -479,11 +518,9 @@ section>.restaurant>.shop_detail>p{
 
     section > article > .shop_info > .info_01 > .instagram_img {
         width: 100%;
-        height: 280px;
-        margin-top: 0;
+        height: 50%;
 
     }
-
 
 
     section > article > .shop_info > .info_01 > .instagram {
@@ -563,5 +600,25 @@ section>.restaurant>.shop_detail>p{
 }
 
 /*end 796px*/
+
+
+@media screen and (max-width: 414px) {
+
+section > article > .shop_info > .info_01 > .instagram_img {
+        width: 100%;
+        height: 50%;
+}
+
+  
+section > article > .shop_info > .info_2 {
+        margin-top: 10%;
+}    
+    
+    
+}
+
+
+
+
 
 /* / */

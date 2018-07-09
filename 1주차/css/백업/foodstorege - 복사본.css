@@ -1,6 +1,7 @@
 @charset "utf-8";
 
-@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
 
 *{margin:0; padding:0;
 	/* box-sizing: border-box; */
@@ -12,7 +13,7 @@ a:link,a:visited,a:hover,a:active{
 }
 body{
 	color:#000;
-	font-family: 'NanumSquareRound',sans-serif;
+	font-family: 'Nanum Gothic', sans-serif;
 	font-size: 0.95em;
 }
 
@@ -64,21 +65,22 @@ section>article .text>span{
 
 
 /*editor*/
-section > article > .editor {
-    width: 100%;
-    height: 100px;
+section>article>.editor{
+    position: absolute;
+	width: 100%;
+	height: 50px;
 }
 
-section > article > .editor > ul {
-
-    width: 100%;
-    height: 45px;
-    padding-right: 1%;
-    text-align: right;
-    line-height: 20px;
-    font-weight: 600;
-    font-size: 0.8em;
-    border-right: 5px solid #000;
+section>article>.editor>p{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100px;
+	height: 50px;
+	text-align: right;
+	line-height: 80px;
+	font-weight: 600;
+	font-size: 0.8em;
 }
 
 
@@ -239,9 +241,7 @@ section>.foodstorege>.total>.text>.storege_text>ul{
 section>.foodstorege>.total>.text>.storege_text>ul>li{
 	float: left;
 	width: 45%;
-/*	height: 400px;*/
-    height: 100%;
-    margin-bottom: 10%;
+	height: 400px;
 
 }
 section>.foodstorege>.total>.text>.storege_text>ul>li:nth-child(odd){
@@ -251,7 +251,7 @@ section>.foodstorege>.total>.text>.storege_text>ul>li:last-child{
     width: 100%;
     height: 130px;
     margin-right: 0;
-/*    margin-top: -150px;*/
+    margin-top: -150px;
 }
 section>.foodstorege>.total>.text>.storege_text>ul>li:nth-child(5){
     
@@ -267,13 +267,7 @@ section>.foodstorege>.total>.text>.storege_text>ul>li>span{
 
 
 
-/*미디어쿼리   1024px*/
-@media screen and (max-width: 1024px){
-        
-    section{
-        width: 80%;
-    }
-}
+
 
 
 
@@ -288,6 +282,33 @@ section{
 }
 
     
+/*
+    
+section>.foodstorege>.total>.img{
+    position: relative;
+	margin: 3% 0;
+    width: 100%;
+    height: 350px;
+    background-color: #fff;
+    
+}
+section>.foodstorege>.total>.img:before{
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+	background-image: url(../images/foodstorege/top.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 0 0;
+    opacity: 0.8;
+}
+*/
 
 
 section>.foodstorege>.total>.img>p{
