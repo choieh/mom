@@ -1,4 +1,4 @@
-window.onload = function() {
+//window.onload = function() {
 
 function openModal() {
   document.getElementById('myModal').style.display = "block";
@@ -35,4 +35,4 @@ function showSlides(n) {
     
     
     
-}
+//}
