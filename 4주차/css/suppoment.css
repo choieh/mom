@@ -1,0 +1,670 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #000;
+    text-decoration: none;
+}
+
+body {
+    color: #000;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 0.95em;
+}
+
+/*중복부분*/
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.line {
+    width: 90px;
+    height: 5px;
+    text-indent: -9999px;
+    margin-bottom: 3%;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+#wrap {
+    width: 100%;
+}
+
+
+
+/*공통*/
+
+/*header*/
+
+header {
+    width: 60%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+header > h1 {
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 1.5em;
+    line-height: 55px;
+}
+
+header > h1 > span {
+    display: block;
+    font-size: 1.8em;
+}
+
+header>p{
+    width: 100%;
+    font-size: 1.8em;
+}
+
+/*section*/
+
+section {
+    /*	width:1152px;*/
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+section > article {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin-top: 10%;
+}
+
+
+section > article > .img {
+    width: 100%;
+    height: 350px;
+    text-indent: -9999px;
+}
+
+
+section > article .text {
+    line-height: 30px;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+section > article .text > span {
+    display: block;
+    margin: 3% 0;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+
+/*shop_info*/
+
+section > article > .shop_info {
+    height: 100%;
+
+}
+
+    /*info_01*/
+section > article > .shop_info > .info_01 {
+    float: left;
+    width: 30%;
+    height: 100%;
+   
+}
+
+
+ /*인스타그램 위아래 라인*/
+section > article > .shop_info > .info_01>.instagram_line{
+    width: 80%;
+    height: 10px;
+    border-top: 2px solid #000;
+    
+}
+
+section > article > .shop_info > .info_01 > .like{
+    width: 80%;
+    height: 30px;
+    margin-top: 3%;
+    line-height: 30px;
+    font-size: 0.8em;
+    border-top: 2px solid #000;
+}
+
+
+
+section > article > .shop_info > .info_01 > ul {
+    width: 80%;
+    height: 50px;
+}
+
+section > article > .shop_info > .info_01 > ul > li {
+    float: left;
+    height: 100%;
+}
+
+section > article > .shop_info > .info_01 > ul > li:first-child {
+    width: 50px;
+    height: 50px;
+    margin-right: 3%;
+    background-color: #000;
+    border-radius: 50%;
+
+}
+
+section > article > .shop_info > .info_01 > ul > li:first-child > .logo {
+    margin-top: 25%;
+    color: #fff;
+    font-size: 0.5em;
+    text-align: center;
+}
+
+section > article > .shop_info > .info_01 > ul > li:last-child {
+    width: 50%;
+    margin-top: 1.5%;
+    font-size: 0.8em;
+}
+
+section > article > .shop_info > .info_01 > ul > li:last-child > p > span {
+    display: block;
+    font-size: 0.5em;
+    font-weight: 600;
+}
+
+section > article > .shop_info > .info_01 > .instagram_img {
+    width: 80%;
+    height: auto;
+    margin-top: 10px;
+}
+
+section > article > .shop_info > .info_01 > .instagram_img>img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+section > article > .shop_info > .info_01 > .instagram > span {
+    display: block;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+
+
+/*해쉬태그*/
+section > article > .shop_info > .info_01 > .instagram {
+    width: 80%;
+    height: 25%;
+    font-size: 0.8em;
+    line-height: 25px;
+}
+
+
+ /*info_2*/
+section > article > .shop_info > .info_2 {
+    float: right;
+    width: 70%;
+    height: 100%;
+
+}
+
+section > article > .shop_info > .info_2>h2{
+    width: 100%;
+    margin-bottom: 2%;
+
+}
+
+section > article > .shop_info > .info_2 > .img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+section > article > .shop_info > .info_2 > .img>img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+/*editor*/
+
+section > article > .editor {
+    width: 100%;
+    height: 100px;
+}
+
+section > article > .editor > ul {
+
+    width: 100%;
+    height: 45px;
+    padding-right: 1%;
+    text-align: right;
+    line-height: 20px;
+    font-weight: 600;
+    font-size: 0.8em;
+    border-right: 5px solid #000;
+}
+
+
+section > article > .shop_detail .address {
+    height: 350px;
+}
+
+
+
+/*매장 주소*/
+
+section > article > .shop_detail .address > ul {
+    float: right;
+    width: 60%;
+    height: 200px;
+    font-size: 0.8em;
+}
+
+section > article > .shop_detail .address > ul > li {
+    height: 25px;
+    line-height: 25px;
+    text-align: right;
+}
+
+section > article > .shop_detail .address > ul > li > span {
+    display: block;
+    font-weight: 800;
+    margin-top: 3%;
+}
+
+section > article > .shop_detail .address > ul > li:nth-child(5) > span {
+    margin-top: 0;
+}
+
+
+
+/*restaurant*/
+
+section > .restaurant {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+section > .restaurant > .shop_info > .info_2 > .img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+/*shop_detail*/
+
+/*part_02*/
+section > .restaurant > .shop_detail > .part_02 {
+    width: 100%;
+    height: 100%;
+    margin: 3% auto;
+}
+
+section > .restaurant > .shop_detail > .part_02>.row>ul {
+    width: 100%;    
+    height: 100%;
+}
+
+section > .restaurant > .shop_detail > .part_02>.row>ul>li {
+    float: left;
+    width: 32%;
+    height: 100%;
+    margin-right: 2%;
+}
+
+
+section > .restaurant > .shop_detail > .part_02>.row>ul>li:last-child {
+    margin-right: 0;
+}
+
+section > .restaurant > .shop_detail > .part_02>.row>ul>li>img {
+    width: 100%;
+    height: auto;
+}
+
+section > .restaurant > .shop_detail > .part_02>.row>ul>li>p {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+
+
+/*part_03*/
+section > .restaurant > .shop_detail > .part_03 {
+    width: 100%;
+    height: 100%;
+}
+
+section > .restaurant > .shop_detail > .part_03>ul {
+    overflow: hidden;
+    width: 100%;    
+    height: 100%;
+}
+
+section > .restaurant > .shop_detail > .part_03>ul>li {
+    float: left;
+    width: 49%;
+    height: 100%;
+    margin-right: 2%;
+}
+
+section > .restaurant > .shop_detail > .part_03>ul>li:last-child {
+    margin-right: 0;
+}
+
+section > .restaurant > .shop_detail > .part_03>ul>li>img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*part_04*/
+section > .restaurant > .shop_detail > .part_04 {
+    width: 100%;
+    height: 100%;
+    margin: 3% auto;
+}
+
+section > .restaurant > .shop_detail > .part_04>img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+/*slide*/
+
+section > .restaurant > .shop_detail > .slide_wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 5% 0 7% 0;
+}
+
+section > .restaurant > .shop_detail > .slide_wrap > .slide-container {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    
+
+}
+
+
+section>.restaurant>.shop_detail>p{
+    margin-bottom: 5%;
+}
+
+
+
+/*미디어쿼리   1700px*/
+
+@media screen and (max-width: 1700px) {
+
+    section > article > .shop_detail .address {
+/*        margin-top: -50px;*/
+    }
+
+
+}
+
+
+
+/*미디어쿼리   1204px*/
+
+@media screen and (max-width: 1204px) {
+
+    section {
+        width: 90%;
+    }
+
+    section > .street > .top {
+        background-position: -190px -350px;
+        -webkit-background-size: cover;
+        background-size: cover;
+
+    }
+
+
+}
+
+/*end 1204px*/
+
+/*미디어쿼리   796px*/
+
+@media screen and (max-width: 796px) {
+
+    header {
+        width: 100%;
+        margin: 0;
+    }
+
+    header > h1 {
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+        letter-spacing: 10px;
+    }
+
+    header>p{
+        text-align: center;
+        line-height: 40px;
+    }
+    header>p>span{
+        display: block;
+    }
+
+
+
+
+
+    section > article > .shop_info {
+        position: relative;
+        height: 100%;
+    }
+
+    section > article > .shop_info > .info_01 {
+        float: none;
+        width: 100%;
+        height:100%;
+        margin-top: 0;
+        margin-bottom: 10%;
+    }
+    
+    section > article > .shop_info > .info_01>.instagram_line{
+    width: 100%;
+    
+    }
+
+    section > article > .shop_info > .info_01 > .like{
+    width: 100%;
+    }
+
+
+    section > article > .shop_info > .info_01 > ul {
+        width: 100%;
+        height: 90px;
+    }
+
+    section > article > .shop_info > .info_01 > ul > li {
+        float: left;
+        height: 50%;
+    }
+
+    section > article > .shop_info > .info_01 > ul > li:first-child {
+        width: 80px;
+        height: 80px;
+        margin-right: 3%;
+        font-size: 2em;
+        text-align: center;
+        background-color: #000;
+        border-radius: 50%;
+
+    }
+    section > article > .shop_info > .info_01 > ul > li:first-child > .logo {
+        margin-top: 25%;
+        color: #fff;
+        font-size: 0.5em;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    section > article > .shop_info > .info_01 > ul > li:last-child {
+        width: 50%;
+        margin-top: 1.5%;
+        font-size: 1.5em;
+    }
+
+    section > article > .shop_info > .info_01 > ul > li:last-child > p > span {
+        display: block;
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+
+
+    section > article > .shop_info > .info_01 > .instagram_img {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+
+    }
+    
+    section > article > .shop_info > .info_01 > .instagram_img>img{
+        display: inline-block;
+        vertical-align: middle;
+        width: 100%;
+        height: auto;
+    }
+
+
+    section > article > .shop_info > .info_01 > .instagram {
+        width: 100%;
+        height: 100%;
+        font-size: 1em;
+        line-height: 25px;
+    }
+
+    section > article > .shop_info > .info_01 > .instagram > span {
+        display: block;
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+
+
+
+
+    section > article > .shop_info > .info_2 {
+        float: none;
+        width: 100%;
+    }
+
+
+    section > .restaurant > .shop_detail > .part_02 {
+        height: 100%;
+
+    }
+    
+    
+
+
+
+    section > article > .shop_detail .address {
+        margin-top: 20%;
+    }
+
+    section > article > .shop_detail .address > ul {
+        float: none;
+        width: 100%;
+        height: 350px;
+        margin-top: 5%;
+    }
+
+    
+    
+
+
+}
+
+/*end 796px*/
+
+
+@media screen and (max-width: 414px) {
+
+section > article > .shop_info > .info_01 > .instagram_img {
+        width: 100%;
+        height: 50%;
+}
+
+  
+section > article > .shop_info > .info_2 {
+        margin-top: 10%;
+}   
+    
+
+
+    
+    /*part_02, part_03*/
+section > .restaurant > .shop_detail > .part_02{
+    margin: 3% auto;
+}    
+
+section > .restaurant > .shop_detail > .part_02>.row>ul>li{
+    float: none;
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+    margin-bottom: 5%;
+}
+    
+    
+}
+
+
+
+
+
+/* / */

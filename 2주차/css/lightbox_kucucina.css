@@ -80,6 +80,8 @@
   right: 25px;
   font-size: 35px;
   font-weight: bold;
+  
+  z-index:1000; 
 }
 
 .close:hover,
@@ -154,29 +156,81 @@
 
 
 
-/*미디어쿼리   796px*/
+/*미디어쿼리   769px*/
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 769px) {
 
+  
+.column {
+  position: relative;
+  float: left;
+  overflow:hidden;
+  width: 49%;
+  height: 270px;
+  margin: 0 1% 1% 0;
+
+/*  outline: 1px solid red;*/
+}
+.column:last-child{
+  margin-right: 0;
+}
+
+
+/*.row>ul>.column>img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+   width:100%;
+   transform: translate(-50%,-50%);
+}*/     
+    
+ 
     
     /* Modal Content */
 .modal-content {
-    
-  height: 85%; 
-  margin: 20% auto;
+
+  width: 100%;
+  margin: 0 auto;
     
 }
+ 
+       
+.modal-content>.mySlides{
+    margin-top: 25%;
+}   
+    
+    
+.prev,
+.next {    
+
+    display: none;
+}
+    
+} /*end 769px*/
 
 
-   
+
+
+
+
+
+
+    /*미디어 쿼리 376px*/
+@media screen and (max-width: 376px) {
     
+.column {
     
-    
-    
+  height: 180px;
+
+
+/*  outline: 1px solid red;*/
 }
 
-
-
+    
+    
+    
+    
+}/*end 769px*/
 
 
 

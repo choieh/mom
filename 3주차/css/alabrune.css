@@ -182,7 +182,6 @@ section > article > .shop_info > .info_01 > ul > li:first-child > .logo {
     color: #fff;
     font-size: 0.5em;
     text-align: center;
-    font-family: 'Dancing Script', cursive;
 }
 
 section > article > .shop_info > .info_01 > ul > li:last-child {
@@ -875,5 +874,38 @@ section > article > .shop_detail>.wine>.recommend>.recommend_menu>ul>li>p>strong
 }
 
 /*end 796px*/
+
+
+
+
+    /*미디어 쿼리 376px*/
+@media screen and (max-width: 376px) {
+
+
+/*와인추천*/
+section > article > .shop_detail>.wine{
+    
+    height: 750px;
+    
+}
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* / */

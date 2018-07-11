@@ -76,10 +76,12 @@
   padding: 0;
   width: 60%;
 }
+
+
 .modal-content>.mySlides:first-child>img{
-  height: 50%;
-  margin-left:25%;
-}
+  margin-left:15%;
+} 
+
 
 /* The Close Button */
 .close {
@@ -148,7 +150,7 @@
 
 
 
-/*미디어쿼리   1704px*/
+/*미디어쿼리   1204px*/
 @media screen and (max-width: 1204px){
 
 
@@ -163,6 +165,53 @@
 
 
 
+
+/*미디어쿼리   796px*/
+@media screen and (max-width:796px){
+    
+    
+    
+.column {
+  position: relative;
+  float: left;
+/*  overflow:hidden;*/
+  width: 49%;
+/*  height: 80%;*/
+  height: 150px;
+  margin-right: 0;  
+
+/*  outline:  1px solid red;*/
+    
+}
+
+ 
+.column:nth-child(3),
+.column:nth-child(4){
+   margin: 3% 0 5% 0 ;
+}  
+
+.column:nth-child(odd){
+   margin-right: 2%;
+}    
+    
+.column:nth-child(even){
+   margin-right: 0;
+}
+
+    
+    
+   
+    
+   
+.prev,
+.next {    
+
+    display: none;
+}
+    
+    
+    
+}
 
 
 

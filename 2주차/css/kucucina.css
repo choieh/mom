@@ -175,7 +175,6 @@ section > article > .shop_info > .info_01 > ul > li:first-child > .logo {
     color: #fff;
     font-size: 0.5em;
     text-align: center;
-    font-family: 'Dancing Script', cursive;
 }
 
 section > article > .shop_info > .info_01 > ul > li:last-child {
@@ -612,9 +611,9 @@ section>.restaurant>.shop_detail>.check>.tip{
 
 
 
-/*미디어쿼리   796px*/
+/*미디어쿼리   769px*/
 
-@media screen and (max-width: 796px) {
+@media screen and (max-width: 769px) {
 
     header {
         width: 100%;
@@ -744,7 +743,8 @@ section>.restaurant>.shop_detail>.check>.tip{
 
 
     section > .restaurant > .shop_detail > .part_02 {
-        height: 150px;
+        height: 100%;
+        margin: 3% 0;
 
     }
 
@@ -877,7 +877,7 @@ section > .restaurant > .shop_detail>.recommend>.dessert_2>ul>.intext>.text>span
 
 
     section > article > .shop_detail .address {
-        margin-top: 20%;
+        margin-top: 10%;
     }
 
     section > article > .shop_detail .address > ul {
@@ -925,6 +925,18 @@ section > .restaurant > .shop_detail>.recommend>.dessert_2>ul>.intext>.text>span
 
 }
 
-/*end 796px*/
+/*end 769px*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* / */

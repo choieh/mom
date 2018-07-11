@@ -184,7 +184,6 @@ section > article > .shop_info > .info_01 > ul > li:first-child > .logo {
     color: #fff;
     font-size: 0.5em;
     text-align: center;
-    font-family: 'Dancing Script', cursive;
 }
 
 section > article > .shop_info > .info_01 > ul > li:last-child {
@@ -555,6 +554,8 @@ header {
     section > .restaurant > .shop_detail > .slide_wrap {
     width: 100%;
     height:100%;
+    margin-top: 0;
+    padding: 5% 0;
 }
 
   

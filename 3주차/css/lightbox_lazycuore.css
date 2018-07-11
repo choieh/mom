@@ -169,7 +169,7 @@
 .modal-content {
   width: 90%;
   height: 100%;
-  margin-top: 10%;
+  margin-top: 15%;
     
 }
 
@@ -182,25 +182,13 @@
     margin: 40% 0 0;
 }
 
-/*    .modal-content>.mySlides>img{
-    width: 65%;
-    margin: 0 17%;
-}
-
-.modal-content>.mySlides:nth-child(2)>img{
-    width: 100%;
-    margin: 12% 0;
-}*/
-    
-    
 
 .prev,
-.next {
+.next{
 
-    margin: -25% 0;
-
+    display: none;
 }
-   
+    
     
     
     
