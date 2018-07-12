@@ -1,0 +1,260 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+
+*{margin:0; padding:0;
+	/* box-sizing: border-box; */
+}
+ul,ol,li{list-style:none;}
+a:link,a:visited,a:hover,a:active{
+	color:#000;
+	text-decoration:none;
+}
+body{
+	color:#000;
+	font-size: 0.95em;
+}
+
+/*중복부분*/
+.clearfix{*zoom:1;}
+.clearfix:after{
+	display:block; clear:both; content:"";
+}
+
+
+#wrap{
+	width:100%;
+}
+
+
+
+
+/*공통*/
+/*section*/
+section{
+	width:60%;
+	margin:0 auto;
+}
+
+section>article{
+  position:relative;
+	width:100%;
+	height:100%;
+	margin-top:10%;
+}
+
+section>article .text{
+	line-height:30px;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+section>article .text>span{
+	display:block;
+	margin-bottom:3%;
+	text-align:center;
+	font-size:1.1em;
+	font-weight:600;
+}
+
+
+
+
+section>.ladder{
+	width: 100%;
+	height: 100%;
+}
+
+
+section>.ladder>.intro{
+    width: 80%;
+    height: 700px;
+    margin: 0 auto 10%;
+}
+
+section>.ladder>.intro>.intro_img{
+    float: left;
+    width: 40%;
+    height: 100%;
+    margin-left: 6%;
+}
+
+section>.ladder>.intro>.intro_img>img{
+    width: 100%;
+    height: 100%;
+}
+
+section>.ladder>.intro>.title{
+    float: right;
+    width: 40%;
+    height: 100%;
+    margin-right: 6%;
+}
+
+section>.ladder>.intro>.title>.line {
+    width: 90px;
+    height: 5px;
+    margin: 0 auto;
+    text-indent: -9999px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+section>.ladder>.intro>.title>h1{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+
+section>.ladder>.intro>.title>.subtitle{
+    width: 100%;
+    height: 200px;
+    margin: 25% 0;
+}
+section>.ladder>.intro>.title>.subtitle>h2{
+    text-align: center;
+}
+section>.ladder>.intro>.title>.subtitle>h2>span{
+    display: block;
+    font-size: 3em;
+}
+
+section>.ladder>.intro>.title>.text{
+    width: 80%;
+    padding: 0 10%;
+    margin-top: 53%;
+    font-size: 1em;
+}
+
+
+
+/*ladder_text*/
+
+section>.ladder>.ladder_text{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10%;
+    outline: 1px solid blue;
+    
+}
+
+section>.ladder>.ladder_text>ul{
+    width: 70%;
+    height: 600px;
+    margin: 0 auto;
+    
+    background-color: skyblue;
+}
+section>.ladder>.ladder_text>ul>li{
+    float: left;
+    width: 33.3333%;
+    height: 200px;
+    outline: 1px solid red;
+}
+section>.ladder>.ladder_text>ul>li>p{
+    width: 70%;
+    height: 70%;
+    padding: 15% 15% 0 15%;
+    text-align: center;
+}
+
+
+    /*히말라야 소금*/
+section>.ladder>.ladder_text>ul>.himalaya{
+    background-color: #a0344e;
+}
+
+    /*말돈 소금*/
+section>.ladder>.ladder_text>ul>.maldon{
+    background-color: #d7909b;
+}
+
+    /*플뢰르 소금*/
+section>.ladder>.ladder_text>ul>.fleur{
+    background-color: #ddd4d3;
+}
+
+
+
+
+
+
+
+
+/*미디어 쿼리 1204px*/
+@media screen and (max-width: 1204px){
+    
+    
+section{
+	width:90%;
+}
+
+    
+section>.ladder>.intro{
+    width: 100%;
+    
+}
+    
+    
+}
+
+
+
+
+
+/*미디어 쿼리 796px*/
+@media screen and (max-width: 796px){
+    
+    
+section{
+	width:100%;
+}
+
+    
+    
+    
+    
+    
+    
+section>.ladder>.ladder_text>ul{
+    width: 90%;
+    
+}
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+/*미디어 쿼리 343px*/
+@media screen and (max-width: 343px){
+    
+    
+
+
+section>.ladder>.ladder_text{
+    margin-top: 50%;
+    
+}
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+/* / */

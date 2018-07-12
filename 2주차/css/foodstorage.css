@@ -84,8 +84,8 @@ section > article > .editor > ul {
 
 
 
-/*foodstorege*/
-section>.foodstorege{
+/*foodstorage*/
+section>.foodstorage{
 	width: 100%;
 	height: 100%;
 }
@@ -94,12 +94,12 @@ section>.foodstorege{
 
 
 /*total*/
-section>.foodstorege>.total{
+section>.foodstorage>.total{
     width: 100%;
     height: 100%;
 }
 
-section>.foodstorege>.total>.img{
+section>.foodstorage>.total>.img{
     position: relative;
 	margin: 3% 0;
     width: 100%;
@@ -107,7 +107,7 @@ section>.foodstorege>.total>.img{
     background-color: #fff;
     
 }
-section>.foodstorege>.total>.img:before{
+section>.foodstorage>.total>.img:before{
     content: ' ';
     display: block;
     position: absolute;
@@ -117,7 +117,7 @@ section>.foodstorege>.total>.img:before{
     height: 100%;
     z-index: 1;
     opacity: 0.6;
-	background-image: url(../images/foodstorege/top.jpg);
+	background-image: url(../images/foodstorage/top.jpg);
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: 0 0;
@@ -125,7 +125,7 @@ section>.foodstorege>.total>.img:before{
 }
 
 
-section>.foodstorege>.total>.img>p{
+section>.foodstorage>.total>.img>p{
 	position: absolute;
 	/*top: 50%;
 	left: 50%;*/
@@ -139,7 +139,7 @@ section>.foodstorege>.total>.img>p{
     z-index: 2;
 
 }
-section>.foodstorege>.total>.img>p>span{
+section>.foodstorage>.total>.img>p>span{
 	display: block;
     width: 100%;
 /*	color: #58781d;*/
@@ -156,13 +156,13 @@ section>.foodstorege>.total>.img>p>span{
 
 
     /*total - .text*/
-section>.foodstorege>.total>.text{
+section>.foodstorage>.total>.text{
     width: 100%;
     height: 100%;
     margin-top: 10%;
 }
 
-section>.foodstorege>.total>.text .line{
+section>.foodstorage>.total>.text .line{
 	width:90px;
 	height:5px;
     margin: 0 auto;
@@ -171,30 +171,18 @@ section>.foodstorege>.total>.text .line{
 	background-color:rgba(0,0,0,1);
 }
 
-section>.foodstorege>.total>.text>h2{
+section>.foodstorage>.total>.text>h2{
     width: 100%;
     height: 80px;
     text-align: center;
     letter-spacing: 20px
 }
 
-section>.foodstorege>.total>.text>p{
-/*    top: 150px;*/
-    width: 94%;
-    height: 10%;
-    padding: 3% 3%;
-/*    margin-bottom: 3%;*/
-    
-        
-}
 
-
-section>.foodstorege>.total>.text>.title{
-    width: 90%;
-/*    height: 350px;*/
-    height: 10%;
-    padding: 5%;
-    background-image: url(../images/foodstorege/title.jpg);
+section>.foodstorage>.total>.text>.title{
+    width: 100%;
+    height: 350px;
+    background-image: url(../images/foodstorage/title.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center ;
@@ -202,10 +190,26 @@ section>.foodstorege>.total>.text>.title{
 }
 
 
+section>.foodstorage>.total>.text>p{
+/*    top: 150px;*/
+    width: 94%;
+    height: 10%;
+    padding: 3% 3%;
+/*    margin-bottom: 3%;*/
+    
+    
+    
+}
 
 
+section>.foodstorage>.total>.text>.title{
+	width: 90%;
+	height: 10%;
+    padding: 5%;
+    
+}
 
-section>.foodstorege>.total>.text>.title>p{
+section>.foodstorage>.total>.text>.title>p{
 	width: 100%;
 	height: 50px;
     margin: 5% 0;
@@ -217,7 +221,7 @@ section>.foodstorege>.total>.text>.title>p{
 }
 
 
-section>.foodstorege>.total>.text>.title>p>span{
+section>.foodstorage>.total>.text>.title>p>span{
 	display: block;
 	font-size: 2em;
 	font-weight: 600;
@@ -229,48 +233,47 @@ section>.foodstorege>.total>.text>.title>p>span{
 
 
 
-/*storege_text*/
-section>.foodstorege>.total>.text>.storege_text{
+/*storage_text*/
+section>.foodstorage>.total>.text>.storage_text{
 	width: 80%;
 	height: 80%;
     padding: 10%;
 }
 
-section>.foodstorege>.total>.text>.storege_text h3{
+section>.foodstorage>.total>.text>.storage_text .line{
+    margin-top: 5%;
+}
+
+section>.foodstorage>.total>.text>.storage_text h3{
     width: 100%;
     height: 80px;
     text-align: center;
     font-size: 1.2em;
 }
 
-section>.foodstorege>.total>.text>.storege_text ul{
+section>.foodstorage>.total>.text>.storage_text ul{
 	width: 100%;
 	height: 100%;
 }
 
-section>.foodstorege>.total>.text>.storege_text ul>li{
-    height: 100%;
+section>.foodstorage>.total>.text>.storage_text ul>li{
+	width: 45%;
+    margin-bottom: 5%;
+
 }
 
 
-section>.foodstorege>.total>.text>.storege_text ul>li:nth-child(1){
-    width: 45%;
+section>.foodstorage>.total>.text>.storage_text ul>li:nth-child(odd){
     float: left;
-    
 }
 
-section>.foodstorege>.total>.text>.storege_text ul>li:nth-child(2){
-    width: 45%;
+section>.foodstorage>.total>.text>.storage_text ul>li:nth-child(even){
     float: right;
 }
-section>.foodstorege>.total>.text>.storege_text ul>li:nth-child(3){
-    float: left;
-    width: 100%;
-}
 
 
 
-section>.foodstorege>.total>.text>.storege_text ul>li>span{
+section>.foodstorage>.total>.text>.storage_text ul>li>span{
 	display: block;
 	margin-top: 3%;
 	font-weight: 600;
@@ -280,47 +283,44 @@ section>.foodstorege>.total>.text>.storege_text ul>li>span{
 
     /*효과*/
 
-section>.foodstorege>.total>.text>.storege_text>.effect{
+section>.foodstorage>.total>.text>.storage_text>.effect{
     width: 100%;
 }
 
-section>.foodstorege>.total>.text>.storege_text>.effect>.line{
-    margin-top: 10%;
+
+
+section>.foodstorage>.total>.text>.storage_text>.effect>ul>li{
+	height: 100%;
+    margin-bottom: 5%;
 }
 
-
-section>.foodstorege>.total>.text>.storege_text>.effect>ul>li{
+section>.foodstorage>.total>.text>.storage_text>.effect>ul>li:nth-child(3),
+section>.foodstorage>.total>.text>.storage_text>.effect>ul>li:nth-child(4){
+/*	height: 400px;*/
 	height: 100%;
 }
 
 
 
-
-
     /*레시피*/
-section>.foodstorege>.total>.text>.storege_text>.recipe{
+section>.foodstorage>.total>.text>.storage_text>.recipe{
     width: 100%;
     height: 100%;
 }
-
-section>.foodstorege>.total>.text>.storege_text>.recipe>.line{
-    margin-top: 10%;
-}
-
-section>.foodstorege>.total>.text>.storege_text>.recipe>ol{
+section>.foodstorage>.total>.text>.storage_text>.recipe>ol{
     width: 100%;
     height: 200px;
 }
-section>.foodstorege>.total>.text>.storege_text>.recipe>ol>li{
+section>.foodstorage>.total>.text>.storage_text>.recipe>ol>li{
     float: left;
     height: 200px;
 }
 
-section>.foodstorege>.total>.text>.storege_text>.recipe>ol>li:nth-child(odd){
+section>.foodstorage>.total>.text>.storage_text>.recipe>ol>li:nth-child(odd){
     width: 20%;
    
 }
-section>.foodstorege>.total>.text>.storege_text>.recipe>ol>li:nth-child(even){
+section>.foodstorage>.total>.text>.storage_text>.recipe>ol>li:nth-child(even){
    width: 6%;
     color: #69491a;
     text-align: center;
@@ -329,7 +329,7 @@ section>.foodstorege>.total>.text>.storege_text>.recipe>ol>li:nth-child(even){
     
 }
 
-section>.foodstorege>.total>.text>.storege_text>.recipe>ol>li>p>span{
+section>.foodstorage>.total>.text>.storage_text>.recipe>ol>li>p>span{
     display: block;
     width: 30px;
     height: 30px;
@@ -342,17 +342,15 @@ section>.foodstorege>.total>.text>.storege_text>.recipe>ol>li>p>span{
 
 
 
-
-
-
-
-/*미디어쿼리   1024px*/
-@media screen and (max-width: 1024px){
+/*미디어쿼리   1204px*/
+@media screen and (max-width: 1204px){
         
     section{
-        width: 80%;
+        width: 90%;
     }
 }
+
+
 
 
 
@@ -365,77 +363,101 @@ section{
 
 
 
-section>.foodstorege>.total>.img>p{
+section>.foodstorage>.total>.img>p{
     width: 100%;
 }
  
     
+
     
-section>.foodstorege>.total>.text>.title>p{
-    height: 100px;
+    
+    
+section>.foodstorage>.total>.text>.title>p{
+    height: 50px;
 
 }
       
     
     
-/*storege_text*/
-    
+/*storage_text*/
 
-section>.foodstorege>.total>.text>.storege_text ul{
+section>.foodstorage>.total>.text>.storage_text ul>li{
 	width: 100%;
-	height: 100%;
-}
+	height: 300px;
 
-section>.foodstorege>.total>.text>.storege_text ul>li{
-    height: 460px;
 }
 
 
-section>.foodstorege>.total>.text>.storege_text ul>li:nth-child(1){
+
+section>.foodstorage>.total>.text>.storage_text ul>li:nth-child(odd){
     float: none;
-    width: 100%;
-    
 }
 
-section>.foodstorege>.total>.text>.storege_text ul>li:nth-child(2){
+section>.foodstorage>.total>.text>.storage_text ul>li:nth-child(even){
     float: none;
-    width: 100%;
-    height: 250px;
+    margin-bottom: 10%;
 }
-section>.foodstorege>.total>.text>.storege_text ul>li:nth-child(3){
-    float: none;
-    width: 100%;
-}    
-    
+
+
+
+section>.foodstorage>.total>.text>.storage_text ul>li>span{
+	display: block;
+	margin-top: 3%;
+	font-weight: 600;
+}
 
 
 
     /*효과*/
 
-section>.foodstorege>.total>.text>.storege_text>.effect{
+section>.foodstorage>.total>.text>.storage_text>.effect{
     width: 100%;
 }
 
 
 
-section>.foodstorege>.total>.text>.storege_text>.effect>ul>li{
-	height: 400px;
-    margin-bottom: 15%;
+section>.foodstorage>.total>.text>.storage_text>.effect>ul>li{
+	height: 230px;
+    margin-bottom: 5%;
 }
 
-section>.foodstorege>.total>.text>.storege_text>.effect>ul>li:nth-child(2){
-    height: 160px;  
+section>.foodstorage>.total>.text>.storage_text>.effect>ul>li:nth-child(3){
+    height:330px; 
 }
-section>.foodstorege>.total>.text>.storege_text>.effect>ul>li:nth-child(3){
-    height: 300px;     
+    
+section>.foodstorage>.total>.text>.storage_text>.effect>ul>li:nth-child(4){
+	height: 470px;
 }
-  
+
+
+
+    /*레시피*/
+section>.foodstorage>.total>.text>.storage_text>.recipe>ol{
+    width: 100%;
+    height: 100%;
+}
+section>.foodstorage>.total>.text>.storage_text>.recipe>ol>li{
+    float: none;
+}
+
+section>.foodstorage>.total>.text>.storage_text>.recipe>ol>li:nth-child(odd){
+    width: 100%;
+    height: 150px;
+   
+}
+section>.foodstorage>.total>.text>.storage_text>.recipe>ol>li:nth-child(even){
+   display: none; 
+}
+
+section>.foodstorage>.total>.text>.storage_text>.recipe>ol>li>p>span{
+    margin: 0 0 3% 0;
+}    
+    
+    
+    
     
  
 
-    
-    
-    
 
 
 }
