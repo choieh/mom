@@ -368,6 +368,8 @@ section > .restaurant > .shop_detail > .part_02 {
     margin-top: 5%;
     margin-bottom: -80px;
     /*text-indent: 5px;*/
+    
+    outline: 1px solid red;
 }
 
 /*food lightbox*/

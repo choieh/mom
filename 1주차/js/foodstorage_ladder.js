@@ -88,6 +88,9 @@ function ladder_text_mobile(){
     }
     
     
+    /* fitText(); */
+    $("#wrap").fitText();
+    
     
 });
 

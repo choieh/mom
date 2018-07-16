@@ -11,6 +11,7 @@
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/foodstorage_ladder.js"></script>
+  <script src="jquery.fittext.js"></script>
   <!--   <script src="js/prohibition.js"></script> 불펌방지-->
 
 </head>
@@ -20,7 +21,6 @@
     <section>
       <article class="ladder">
                   <div class="intro clearfix">
-<!--                     <div class="intro_img">인트로 소금이미지</div>-->
                      
                       <div class="title">
                           <div class="line"></div>
@@ -37,14 +37,106 @@
                        </div> 
                   </div> 
                   
-                   <div class="start">
-                       <p class="text">
-                            <!--<strong>맘라벨</strong>
-                            <span>Start!</span>-->
-                        </p>
+                  <div class="ladder_text">
+                      <ul class="clearfix">
+                          <li class="fleur">
+                             <div class="detail">
+                              <p class="text">
+                                <span>Start 1.</span>
+                                 세계에서 가장 많은 종류의  미네랄을 포함한 소금으로 기네스북에 등재 되었다.
+                              </p>
+                              </div>
+                              <div class="arrow dgn">
+                                   <i class="fas fa-long-arrow-alt-right arrow2" aria-hidden="true"></i>
+                              </div>
+                          </li>
+                          <li class="himalaya">
+                             <div class="detail">
+                                  <p class="text">
+                                    <span>Start 2.</span>
+                                     일반 소금과 달리  달달한 맛이 나며, 소금 자체만으로도  그 맛이 탁월하다. 
+                                  </p>
+                              </div>
+                              <div class="arrow ldgn">
+                                   <i class="fas fa-long-arrow-alt-right arrow3" aria-hidden="true"></i>
+                              </div>
+                          </li>
+                          <li class="maldon">
+                             <div class="detail">
+                              <p class="text">
+                                <span>Start 3.</span>
+                                 일반 소금에 비해 입자가 곱고  칼슘과 칼륨, 마그네슘  함량이 높다.
+                              </p>
+                              </div>
+                              <div class="arrow str">
+                                   <i class="fas fa-long-arrow-alt-right arrow5" aria-hidden="true"></i>
+                              </div>
+                          </li>
+                          <li class="himalaya">
+                             <div class="detail">
+                              <p class="text">
+                                 무기질이 풍부해 고혈압을 예방하고 당뇨를 완화 시키는데 도움을 준다.
+                              </p>
+                              </div>
+                              <div class="arrow str">
+                                   <i class="fas fa-long-arrow-alt-right arrow5" aria-hidden="true"></i>
+                              </div>
+                          </li>
+                          <li class="fleur">
+                             <div class="detail">
+                              <p class="text">
+                                 일반 소금보다 염분이 약 25% 낮은 소금이다.
+                              </p>
+                              </div>
+                              <div class="arrow dgn">
+                                   <i class="fas fa-long-arrow-alt-right arrow2" aria-hidden="true"></i>
+                              </div>
+                          </li>
+                          <li class="maldon">
+                             <div class="detail">
+                              <p class="text">
+                                테이블 소금으로  활용하기에  적합하다.
+                              </p>
+                              </div>
+                              <div class="arrow ldgn">
+                                   <i class="fas fa-long-arrow-alt-right arrow3" aria-hidden="true"></i>
+                              </div>
+                          </li>
+                          <li class="himalaya">
+                             <div class="detail">
+                              <p class="text">
+                                 쓴 맛이 적어 적은 양으로도  음식의 감칠맛을  살릴 수 있다.
+                              </p>
+                              </div>
+                              <div class="arrow final">
+                                   <i class="fas fa-long-arrow-alt-right arrow5 final" aria-hidden="true"></i>
+                              </div>
+                          </li>
+                          <li class="maldon">
+                             <div class="detail">
+                              <p class="text">
+                                 스테이크나 샐러드에  가니쉬로 곁들어  먹으면 좋다. 
+                              </p>
+                              </div>
+                              <div class="arrow final">
+                                   <i class="fas fa-long-arrow-alt-right arrow5 final" aria-hidden="true"></i>
+                              </div>
+                          </li>
+                          <li class="fleur">
+                             <div class="detail">
+                              <p class="text">
+                                국물 요리에  주로 쓴다. 
+                              </p>
+                              </div>
+                              <div class="arrow">
+                                   <i class="fas fa-long-arrow-alt-right arrow5 final" aria-hidden="true"></i>
+                              </div>
+                          </li>
+                      </ul>
                   </div>
-                  
-                  <div class="salt_img">
+                
+                
+                 <div class="salt_img">
                       <ul class="clearfix">
                           <li>
                               <a href="#">
@@ -61,17 +153,17 @@
                                       </li>
                                       <li>
                                           <p class="text">
-                                             2. 일반 소금과 달리  달달한 맛이 나며, 소금 자체만으로도  그 맛이 탁월하다. 
+                                             &#8226; 일반 소금과 달리  달달한 맛이 나며, 소금 자체만으로도  그 맛이 탁월하다. 
                                           </p>
                                       </li>
                                       <li>
                                           <p class="text">
-                                             4. 무기질이 풍부해 고혈압을 예방하고 당뇨를 완화 시키는데 도움을 준다.
+                                             &#8226; 무기질이 풍부해 고혈압을 예방하고 당뇨를 완화 시키는데 도움을 준다.
                                           </p>
                                       </li>
                                       <li>
                                           <p class="text">
-                                             8. 쓴 맛이 적어 적은 양으로도  음식의 감칠맛을  살릴 수 있다. 
+                                            &#8226; 쓴 맛이 적어 적은 양으로도  음식의 감칠맛을  살릴 수 있다. 
                                           </p>
                                       </li>
                                   </ul>
@@ -94,17 +186,17 @@
                                       </li>
                                       <li>
                                           <p class="text">
-                                             3. 일반 소금에 비해 입자가 곱고  칼슘과 칼륨, 마그네슘  함량이 높다.
+                                            &#8226; 일반 소금에 비해 입자가 곱고  칼슘과 칼륨, 마그네슘  함량이 높다.
                                           </p>
                                       </li>
                                       <li>
                                           <p class="text">
-                                             5. 테이블 소금으로  활용하기에  적합하다.
+                                          &#8226; 테이블 소금으로  활용하기에  적합하다.
                                           </p>
                                       </li>
                                       <li>
                                           <p class="text">
-                                            9. 스테이크나 샐러드에  가니쉬로 곁들어  먹으면 좋다. 
+                                            &#8226; 스테이크나 샐러드에  가니쉬로 곁들어  먹으면 좋다. 
                                           </p>
                                       </li>
                                   </ul>
@@ -126,74 +218,23 @@
                                       </li>
                                       <li>
                                           <p class="text">
-                                             1. 세계에서 가장 많은 종류의  미네랄을 포함한 소금으로 기네스북에 등재 되었다.
+                                             &#8226; 세계에서 가장 많은 종류의  미네랄을 포함한 소금으로 기네스북에 등재 되었다.
                                           </p>
                                       </li>
 
                                       <li>
                                           <p class="text">
-                                            6. 일반 소금보다 염분이 약 25% 낮은 소금이다.
+                                             &#8226; 일반 소금보다 염분이 약 25% 낮은 소금이다.
                                           </p>
                                       </li>
                                       <li>
                                           <p class="text">
-                                             7. 국물 요리에  주로 쓴다.
+                                             &#8226; 국물 요리에  주로 쓴다.
                                           </p>
                                       </li>
                                   </ul>
                               </div>
                               
-                          </li>
-                      </ul>
-                  </div>
-                     
-                    
-                  <div class="ladder_text">
-                      <ul class="clearfix">
-                          <li class="fleur">
-                              <p class="text">
-                                 1. 세계에서 가장 많은 종류의  미네랄을 포함한 소금으로 기네스북에 등재 되었다.
-                              </p>
-                          </li>
-                          <li class="himalaya">
-                              <p class="text">
-                                 2. 일반 소금과 달리  달달한 맛이 나며, 소금 자체만으로도  그 맛이 탁월하다. 
-                              </p>
-                          </li>
-                          <li class="maldon">
-                              <p class="text">
-                                 3. 일반 소금에 비해 입자가 곱고  칼슘과 칼륨, 마그네슘  함량이 높다.
-                              </p>
-                          </li>
-                          <li class="himalaya">
-                              <p class="text">
-                                 4. 무기질이 풍부해 고혈압을 예방하고 당뇨를 완화 시키는데 도움을 준다.
-                              </p>
-                          </li>
-                          <li class="maldon">
-                              <p class="text">
-                                 5. 테이블 소금으로  활용하기에  적합하다.
-                              </p>
-                          </li>
-                          <li class="fleur">
-                              <p class="text">
-                                6. 일반 소금보다 염분이 약 25% 낮은 소금이다.
-                              </p>
-                          </li>
-                          <li class="fleur">
-                              <p class="text">
-                                 7. 국물 요리에  주로 쓴다.
-                              </p>
-                          </li>
-                          <li class="himalaya">
-                              <p class="text">
-                                 8. 쓴 맛이 적어 적은 양으로도  음식의 감칠맛을  살릴 수 있다. 
-                              </p>
-                          </li>
-                          <li class="maldon">
-                              <p class="text">
-                                9. 스테이크나 샐러드에  가니쉬로 곁들어  먹으면 좋다. 
-                              </p>
                           </li>
                       </ul>
                   </div>

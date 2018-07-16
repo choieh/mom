@@ -23,7 +23,9 @@ body{
 
 
 #wrap{
-	width:100%;
+/*    width: 1300px;*/
+    width: 67%;
+    margin: 0 auto;
 }
 
 
@@ -32,7 +34,7 @@ body{
 /*공통*/
 /*section*/
 section{
-	width:60%;
+	width:80%;
 	margin:0 auto;
 }
 
@@ -69,23 +71,9 @@ section>.ladder{
 
 section>.ladder>.intro{
     width: 80%;
-    height: 700px;
-    margin: 0 auto 10%;
+    height: 600px;
+    margin: 0 auto;
 }
-
-
-section>.ladder>.intro>.intro_img{
-    float: left;
-    width: 40%;
-    height: 100%;
-    margin-left: 6%;
-    text-indent: -9999px;
-    background-image: url(../images/foodstorage/main.jpg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-}
-
 
 
 
@@ -99,8 +87,6 @@ section>.ladder>.intro>.intro_img{
 section>.ladder>.intro>.title{
     width: 100%;
     height: 100%;
-    
-/*    outline: 1px solid red;*/
 }
 
 section>.ladder>.intro>.title>.line {
@@ -123,7 +109,7 @@ section>.ladder>.intro>.title>h1{
 section>.ladder>.intro>.title>.subtitle{
     width: 100%;
 /*    height: 200px;*/
-    margin: 15% 0;
+    margin: 5% 0;
 }
 section>.ladder>.intro>.title>.subtitle>h2{
     text-align: center;
@@ -179,8 +165,9 @@ section>.ladder>.salt_img{
     
 }
 section>.ladder>.salt_img>ul{
-    width: 100%;
+    width: 80%;
     height: 100%;
+    margin: 0 auto;
 }
 section>.ladder>.salt_img>ul>li{
     float: left;
@@ -245,7 +232,7 @@ section>.ladder>.ladder_text{
     width: 100%;
     height: 100%;
     margin-bottom: 10%;
-   
+    z-index: 3000;
     
 }
 
@@ -255,7 +242,7 @@ section>.ladder>.ladder_text>ul{
     margin: 0 auto;
 }
 section>.ladder>.ladder_text>ul>li{
-    overflow: hidden;
+/*    overflow: hidden;*/
     float: left;
     width: 32.7%;
     height: 200px;
@@ -267,39 +254,168 @@ section>.ladder>.ladder_text>ul>li{
     
 /*    background-color: #ddd4d3;*/
 }
-section>.ladder>.ladder_text>ul>li>p{
-    width: 80%;
-    height: 87%;
+section>.ladder>.ladder_text>ul>li>.detail{
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
-    padding: 23% 10% 0;
-/*    padding: 23% 15% 0 15%;*/
+}
+
+section>.ladder>.ladder_text>ul>li>.detail>p{
+    width: 80%;
+    height: 50%;
+    padding-top: 15%;
+    padding-left: 10%;
     text-align: center;
 }
 
+/*section>.ladder>.ladder_text>ul>li>p>span{
+    margin-top: -10%;
+    text-decoration: underline;
+}*/
+
 
     /*히말라야 소금*/
-section>.ladder>.ladder_text>ul>.himalaya:hover>p{
-    
+section>.ladder>.ladder_text>ul>.himalaya:hover>.detail{
     color: #fff;
     background-color: #a0344e;
     cursor: pointer;
 }
 
     /*말돈 소금*/
-section>.ladder>.ladder_text>ul>.maldon:hover>p{
+section>.ladder>.ladder_text>ul>.maldon:hover>.detail{
     color: #000;
     background-color: #d7909b;
     cursor: pointer;
 }
 
     /*플뢰르 소금*/
-section>.ladder>.ladder_text>ul>.fleur:hover>p{
+section>.ladder>.ladder_text>ul>.fleur:hover>.detail{
      color: #000;
     background-color: #ddd4d3;
     cursor: pointer;
 }
 
 
+/*arrow*/
+section>.ladder>.ladder_text>ul>li:hover>.arrow{
+    display: block;
+}
+
+section>.ladder>.ladder_text>ul>li>.arrow{
+    position: relative;
+    display: none;
+    width: 100px;
+    height: 100px;
+    margin: -25% auto 0;
+}
+
+section>.ladder>.ladder_text>ul>li>.arrow>.final{
+    color: crimson;
+}
+
+section>.ladder>.ladder_text>ul>li>.arrow>i{
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    font-size: 2em;
+    color: #000;
+}
+section>.ladder>.ladder_text>ul>li>.arrow>.arrow5 {
+  animation: slide4 0.8s ease-in-out infinite;
+}
+
+section>.ladder>.ladder_text>ul>li>.arrow>.arrow2 {
+  animation: slide2 1s ease-in-out infinite;    
+}
+
+section>.ladder>.ladder_text>ul>li>.arrow>.arrow3 {
+  animation: slide3 1s ease-in-out infinite;    
+}
+
+
+
+@keyframes slide2 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(45deg);
+  }
+
+  50% {
+    transform: translate(30px, 30px) rotate(45deg);
+  }
+}
+
+@keyframes slide3 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(135deg);
+  }
+
+  50% {
+    transform: translate(-30px, 30px) rotate(135deg);
+  }
+}
+
+
+@keyframes slide4 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(90deg);
+  }
+
+  100% {
+    transform: translate(0, 30px) rotate(90deg);
+  }
+}
+
+
+section>.ladder>.ladder_text>ul>li>.ldgn{
+/*    margin: -25% auto 0;*/
+    margin: -35%  0 0 -20%;
+}
+
+
+section>.ladder>.ladder_text>ul>li>.dgn{
+/*    margin: -25% auto 0;*/
+    margin: -35%  0 0 80%;
+}
+
+section>.ladder>.ladder_text>ul>li>.str{
+    margin: -40% auto 0;
+}
+
+
+
+
+
+
+
+
+/*미디어 쿼리 1700px*/
+@media screen and (max-width: 1700px){
+    
+#wrap{
+   width: 90%;        
+}  
+    
+section{
+	width:100%;
+    margin: 0 auto;
+}
+
+    
+section>.ladder>.intro{
+    width: 100%;
+    
+}
+  
+    
+
+    
+    
+    
+    
+}
 
 
 
@@ -311,15 +427,17 @@ section>.ladder>.ladder_text>ul>.fleur:hover>p{
 @media screen and (max-width: 1204px){
     
     
-section{
-	width:90%;
+#wrap{
+   width: 90%;        
+} 
+
+section>.ladder>.salt_img{
+    margin: 10% 0 5%;
+    
 }
 
     
-section>.ladder>.intro{
-    width: 100%;
     
-}
     
     
 }
@@ -344,12 +462,7 @@ section>.ladder>.intro{
     margin: 0 auto;
 }
 
-section>.ladder>.intro>.intro_img{
-    float: none;
-    width: 100%;
-    height: 300px;
-    margin-left: 0;
-}
+
 
 section>.ladder>.intro>.title{
     float: none;
@@ -380,6 +493,10 @@ section>.ladder>.intro>.title>.text{
     
 
 /*salt_img*/
+section>.ladder>.salt_img>ul{
+    width: 100%;
+}    
+    
 section>.ladder>.salt_img>ul>li{
     float: none;
     width: 100%;
@@ -446,6 +563,25 @@ section>.ladder>.ladder_text>ul{
 section>.ladder>.ladder_text{
     margin-top: 50%;
     
+}
+    
+    
+section>.ladder>.salt_img>ul>li>a>p{
+    font-size: 1.5em;
+    line-height: 50px;
+    /*position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 25%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;*/
+}
+
+section>.ladder>.salt_img>ul>li>a>p>span{
+/*    display: block;*/
+    font-size: 1.5em;
 }
     
     
